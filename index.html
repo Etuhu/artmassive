@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Арт Массив</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="img/favicon.ico" rel="shortcut icon" />
+		<link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/mmenu-light.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.mCustomScrollbar.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/fancybox.css" />
+		<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/style.css.map" media="screen" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="pre-loader" class="pre-loader" style="opacity: 0; display: none"></div>
+		<div class="fader"></div>
+
+		<div class="header header--index fixed-top">
+			<div class="container">
+				<div class="header-wrapper row">
+					<div class="col-xxl-2 col-lg-3 col-sm-4 col-5 logo-wrapper">
+						<a href="/"><img src="img/logo.svg" width="250" height="55" class="img-fluid logo" /></a>
+					</div>
+					<div class="col-xxl-8 col-lg-9 top-menu-wrapper hidden">
+						<nav class="top-menu" role="navigation" id="mainMenu">
+							<div class="header-menu header-menu--mobile d-lg-none d-flex">
+								<img src="img/logo.svg" width="250" height="55" class="img-fluid logo logo--mobile" />
+								<button type="button" class="close-menu-button" aria-label="Close">Закрыть</button>
+							</div>
+							<ul>
+								<li class="menu-item menu-item-has-children nav-item dropdown green">
+									<!--При активации мобильного меню удаляем всю ссылку и заменяем ее на span без атрибутов, либо просто скрываем ссылку и открываем span-->
+									<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8151" class="nav-link dropdown-toggle">Каталог</a>
+									<ul class="dropdown-menu">
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Малые архитектурные формы</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Детские игровые комплексы</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+										<li class="menu-item nav-item"><a href="catalog.html" class="nav-link">Все категории</a></li>
+									</ul>
+								</li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Главная</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Проектируем</a></li>
+								<li class="menu-item menu-item-has-children nav-item dropdown">
+									<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8152" class="nav-link dropdown-toggle">Сделано у нас</a>
+									<ul class="dropdown-menu">
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Инсталляции</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Детские площадки</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Спортивные объекты</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Все проекты</a></li>
+									</ul>
+								</li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">О компании</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Блог</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Специалистам</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-2 justify-content-end align-items-center d-flex d-lg-none navbar-toggler-wrapper">
+						<a href="#mainMenu" class="navbar-toggler show" type="button" aria-label="Раскрыть навигацию">
+							<span class="navbar-toggler-icon">
+								<span></span>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="index-page">
+			<section class="promo-slider">
+				<div class="swiper promo-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="pic">
+								<picture>
+									<source srcset="img/slide_1_mobile.jpg" media="(max-width: 575px)" />
+									<source srcset="img/slide_1_tablet.jpg" media="(max-width: 991px)" />
+									<source srcset="img/slide_1_desktop.jpg" />
+									<img class="img-fluid w-100" src="img/slide_1_desktop.jpg" />
+								</picture>
+							</div>
+							<div class="container caption">
+								<div class="caption-content">
+									<h2>Создаем уютную среду для людей</h2>
+									<div class="caption-description">
+										<div class="project-preview point-text">Комплексный проект по благоустройству городской среды</div>
+										<div class="project-title">
+											<h3>Современный парк Металлургов в городе Междуреченск</h3>
+											<a class="basic-button basic-button--light basic-button--arrowed">Подробнее о проекте</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="pic">
+								<picture>
+									<source srcset="img/slide_1_mobile.jpg" media="(max-width: 575px)" />
+									<source srcset="img/slide_1_tablet.jpg" media="(max-width: 991px)" />
+									<source srcset="img/slide_1_desktop.jpg" />
+									<img class="img-fluid w-100" src="img/slide_1_desktop.jpg" />
+								</picture>
+							</div>
+							<div class="container caption">
+								<div class="caption-content">
+									<h2>Заголовок слайда номер 2</h2>
+									<div class="caption-description">
+										<div class="project-preview point-text">Комплексный проект по благоустройству городской среды</div>
+										<div class="project-title">
+											<h3>Современный парк Металлургов в городе Междуреченск</h3>
+											<a class="basic-button basic-button--light basic-button--arrowed">Подробнее о проекте</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-navigation">
+						<div class="swiper-button-prev promo-swiper-button-prev"></div>
+						<div class="swiper-button-next promo-swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+			<section class="catalog-categories catalog-categories--index">
+				<div class="container">
+					<h2 class="basic-title">Каталог</h2>
+					<div class="categories-wrapper row">
+						<div class="col-xxl-8 col-lg-7 category-item category-item--top">
+							<div class="content">
+								<div class="category-item-info">
+									<h3 class="category-item-title">Малые архитектурные формы</h3>
+									<ul>
+										<li><a href="catalog-category-item.html">Скамьи</a></li>
+										<li><a href="catalog-category-item.html">Урны</a></li>
+										<li><a href="catalog-category-item.html">Качели</a></li>
+										<li><a href="catalog-category-item.html">Кашпо</a></li>
+										<li><a href="catalog-category-item.html">Перголы и навесы</a></li>
+										<li><a href="catalog-category-item.html">Парклеты и беседки</a></li>
+										<li><a href="catalog-category-item.html">Киоски/торговые павильоны</a></li>
+										<li><a href="catalog-category-item.html">Велоинфраструктура</a></li>
+										<li><a href="catalog-category-item.html">Навигация</a></li>
+										<li><a href="catalog-category-item.html">Инклюзивная мебель</a></li>
+										<li><a href="catalog-category-item.html">Санузлы</a></li>
+										<li><a href="catalog-category-item.html">Площадки для выгула и дрессировки собак</a></li>
+										<li><a href="catalog-category-item.html">Мангалы</a></li>
+										<li><a href="catalog-category-item.html">Ограждения</a></li>
+										<li><a href="catalog-category-item.html">Стеллы</a></li>
+										<li><a href="catalog-category-item.html">Уличные библиотеки</a></li>
+									</ul>
+									<a href="catalog-category.html" class="basic-button basic-bitton--light basic-button--arrow">Все товары категории</a>
+								</div>
+								<div class="category-item-pic">
+									<img src="img/forms_category_pic.png" class="img-fluid" width="880" height="875" />
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-4 col-lg-5 category-item category-item--actual">
+							<div class="content">
+								<div class="category-item-info">
+									<h3 class="category-item-title">Актуальное</h3>
+									<ul>
+										<li><a href="catalog-category-item.html">Перетяжки</a></li>
+										<li><a href="catalog-category-item.html">Инсталляции</a></li>
+										<li><a href="catalog-category-item.html">Выставочное оборудование</a></li>
+										<li><a href="catalog-category-item.html">Мобильные сцены</a></li>
+									</ul>
+									<a href="catalog-category.html" class="basic-button basic-bitton--light basic-button--arrow">Все товары категории</a>
+								</div>
+								<div class="category-item-pic">
+									<img src="img/nine_may.png" class="img-fluid" width="526" height="566" />
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 category-item category-item--standart">
+							<div class="content">
+								<div class="category-item-info">
+									<h3 class="category-item-title">Детские игровые комплексы</h3>
+									<ul>
+										<li><a href="catalog-category-item.html">Детские площадки</a></li>
+										<li><a href="catalog-category-item.html">Скалодромы</a></li>
+										<li><a href="catalog-category-item.html">Детские качели</a></li>
+										<li><a href="catalog-category-item.html">Игровые комплексы</a></li>
+									</ul>
+									<a href="catalog-category.html" class="basic-button basic-bitton--light basic-button--arrow">Все товары категории</a>
+								</div>
+								<div class="category-item-pic">
+									<img src="img/child_complex_pic.png" class="img-fluid" width="882" height="650" />
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 category-item category-item--standart">
+							<div class="content">
+								<div class="category-item-info">
+									<h3 class="category-item-title">Модульные дома</h3>
+									<ul>
+										<li><a href="catalog-category-item.html">Жилые модульные дома</a></li>
+										<li><a href="catalog-category-item.html">Киоски/торговые павильоны</a></li>
+										<li><a href="catalog-category-item.html">Коммерческие модульные дома</a></li>
+										<li><a href="catalog-category-item.html">Оранжереи</a></li>
+									</ul>
+									<a href="catalog-category.html" class="basic-button basic-bitton--light basic-button--arrow">Все товары категории</a>
+								</div>
+								<div class="category-item-pic">
+									<img src="img/module_homes_pic.png" class="img-fluid" width="882" height="650" />
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-12 category-item category-item--last">
+							<div class="content">
+								<div class="category-item-info">
+									<h3 class="category-item-title">Кое-что ещё</h3>
+									<ul>
+										<li><a href="catalog-category-item.html">Благоустройство территорий парков, скверов, аллей</a></li>
+										<li><a href="catalog-category-item.html">Детские игровые комплексы</a></li>
+										<li><a href="catalog-category-item.html">Торговые кварталы</a></li>
+										<li><a href="catalog-category-item.html">Ландшафтный дизайн</a></li>
+									</ul>
+									<a href="catalog-category.html" class="basic-button basic-bitton--light basic-button--arrow">Все товары категории</a>
+								</div>
+								<div class="category-item-pic">
+									<img src="img/teplic_pic.png" class="img-fluid" width="1153" height="400" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="index-top-product slider-block">
+				<div class="container container--large">
+					<div class="title-wrapper">
+						<h2 class="basic-title">Топ наших продуктов</h2>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev top-product-swiper-button-prev"></div>
+							<div class="swiper-button-next top-product-swiper-button-next"></div>
+						</div>
+						<a class="basic-button basic-button--light all-feed-link">Все</a>
+					</div>
+					<div class="top-product-swiper swiper">
+						<div class="swiper-wrapper catalog-list">
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="swiper-button swiper-button-prev index-sales-swiper-button-prev">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.9176 11.648L12.6136 18.344L10.5616 20.36L0.373604 10.208L10.5616 0.0200462L12.6136 2.03605L5.88161 8.76805L20.6416 8.76805V11.648L5.9176 11.648Z" fill="white" />
+						</svg>
+					</div>
+					<div class="swiper-button swiper-button-next index-sales-swiper-button-next">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.0976 8.73202L8.4016 2.03602L10.4536 0.0200195L20.6416 10.172L10.4536 20.36L8.4016 18.344L15.1336 11.612L0.373596 11.612L0.373596 8.73202L15.0976 8.73202Z" fill="white" />
+						</svg>
+					</div>
+					<a href="catalog.html" class="slider-block-title-link">
+						<span class="link-text">Все предложения</span>
+						<span class="link-arrow">
+							<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.0202 8.79035L8.31765 1.11882L8.93882 0.497644L17.7285 9.25623L8.93882 18.0459L8.31765 17.4247L16.0824 9.66H0.242353V8.79035H16.0202Z" fill="white" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class="index-banner">
+				<div class="banner-wrapper">
+					<a href="action-page.html"></a>
+					<picture>
+						<source srcset="img/action-slide-mobile.jpg" media="(max-width: 575px)" />
+						<source srcset="img/action-slide-tablet.jpg" media="(max-width: 991px)" />
+						<source srcset="img/action-slide-desktop.jpg" />
+						<img class="img-fluid w-100" src="img/action-slide-desktop.jpg" />
+					</picture>
+					<div class="basic-button basic-button--red">Рассчитать стоимость</div>
+				</div>
+			</section>
+			<section class="index-sales slider-block">
+				<div class="container container--large">
+					<div class="title-wrapper">
+						<h2 class="basic-title">Выгодно</h2>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev sales-swiper-button-prev"></div>
+							<div class="swiper-button-next sales-swiper-button-next"></div>
+						</div>
+						<a class="basic-button basic-button--light all-feed-link">Все</a>
+					</div>
+					<div class="sales-swiper swiper">
+						<div class="swiper-wrapper catalog-list">
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+							<article class="swiper-slide catalog-item">
+								<div class="content">
+									<a href="catalog-item.html" class="catalog-item-image-link">
+										<div class="catalog-item-image-wrapper">
+											<img src="img/product_pic.jpg" width="391" height="391" class="catalog-item-image img-fluid" />
+										</div>
+									</a>
+									<div class="catalog-item-info">
+										<a href="catalog-item.html" class="catalog-item-title-link">
+											<h3 class="catalog-item-title">Беседка «ЭКО»</h3>
+										</a>
+										<div class="catalog-item-preview">Подходит для благоустройства парков, частных территорий жилых массивов, коттеджей, муниципальных учреждений</div>
+									</div>
+									<div class="catalog-item-footer">
+										<div class="catalog-item-price">
+											<span class="price-value">
+												28 000&nbsp;₽
+												<small>/шт.</small>
+											</span>
+											<a href="catalog-item.html">Подробнее</a>
+										</div>
+										<a href="#" class="basic-button basic-button--green order-button">Оставить заявку</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="swiper-button swiper-button-prev index-sales-swiper-button-prev">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.9176 11.648L12.6136 18.344L10.5616 20.36L0.373604 10.208L10.5616 0.0200462L12.6136 2.03605L5.88161 8.76805L20.6416 8.76805V11.648L5.9176 11.648Z" fill="white" />
+						</svg>
+					</div>
+					<div class="swiper-button swiper-button-next index-sales-swiper-button-next">
+						<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.0976 8.73202L8.4016 2.03602L10.4536 0.0200195L20.6416 10.172L10.4536 20.36L8.4016 18.344L15.1336 11.612L0.373596 11.612L0.373596 8.73202L15.0976 8.73202Z" fill="white" />
+						</svg>
+					</div>
+					<a href="catalog.html" class="slider-block-title-link">
+						<span class="link-text">Все предложения</span>
+						<span class="link-arrow">
+							<svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.0202 8.79035L8.31765 1.11882L8.93882 0.497644L17.7285 9.25623L8.93882 18.0459L8.31765 17.4247L16.0824 9.66H0.242353V8.79035H16.0202Z" fill="white" />
+							</svg>
+						</span>
+					</a>
+				</div>
+			</section>
+			<section class="index-examples index-examples--projects">
+				<div class="container container--large">
+					<div class="title-wrapper">
+						<h2 class="basic-title">Готовые решения для жизни и отдыха людей</h2>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev sales-swiper-button-prev"></div>
+							<div class="swiper-button-next sales-swiper-button-next"></div>
+						</div>
+						<a class="basic-button basic-button--light all-feed-link" href="projects.html">Все</a>
+					</div>
+					<div class="index-examples-wrapper row">
+						<div class="col-xxl-2 col-lg-3 index-examples-item index-examples-item--text point-text">Комплексные решения дают особый повод для гордости, ведь каждый проект уникален и решает задачи своего пространства, не только облагораживая, но делая удобным, комфортным, своим.</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="projects-item.html" class="stretched-link"></a>
+								<img src="img/example-1.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="projects-item.html">Парк в новом городке (Белово)</a>
+						</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="projects-item.html" class="stretched-link"></a>
+								<img src="img/example-2.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="projects-item.html">Парк Металлург (Гурьевск)</a>
+						</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="projects-item.html" class="stretched-link"></a>
+								<img src="img/example-1.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="projects-item.html">Благоустройство территории Школы 37 (Грамотеино)</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="relise-projects">
+				<div class="container">
+					<div class="row">
+						<div class="col-xxl-6 offset-xxl-2 col-xl-7 offset-xl-1 col-xl-8 offset-0 relise-projects-wrapper">
+							<h2 class="basic-title">
+								Реализованные проекты
+								<span class="counter">(84)</span>
+							</h2>
+							<a href="projects.html" class="basic-button basic-button--light basic-button--arrowed">Архив работ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="index-about">
+				<div class="container container--large">
+					<div class="index-about-fader"></div>
+					<div class="index-about-content">
+						<div class="index-about-content-top">
+							<h2 class="basic-title">Создаем город будущего вместе</h2>
+							<div class="index-about-preview point-text">Философией компании «Арт-массив» с момента основания является идея о создании комфортного, современного облика города, и именно с точки зрения эргономики мы подходим к проектированию заказов.</div>
+						</div>
+						<div class="index-about-content-bottom">
+							<img class="img-fluid index-about-logo" src="logo-opacity.svg" width="547" height="120" />
+							<a href="about.html" class="basic-button basic-button--light basic-button--arrowed">Подробнее о нас</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="index-examples index-examples--blog">
+				<div class="container container--large">
+					<div class="title-wrapper">
+						<h2 class="basic-title">О проектах, идеях и новых технологиях</h2>
+						<div class="swiper-navigation">
+							<div class="swiper-button-prev sales-swiper-button-prev"></div>
+							<div class="swiper-button-next sales-swiper-button-next"></div>
+						</div>
+						<a class="basic-button basic-button--light all-feed-link" href="blog.html">Все статьи</a>
+					</div>
+					<div class="index-examples-wrapper row">
+						<div class="col-xxl-2 col-lg-3 index-examples-item index-examples-item--text point-text">Мы хотим показать вам, как технологии входят в нашу жизнь уже сейчас.</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="blog-item.html" class="stretched-link"></a>
+								<img src="img/example-1.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="blog-item.html">Экологичное проектирование в дизайне современной городской среды</a>
+						</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="blog-item.html" class="stretched-link"></a>
+								<img src="img/example-3.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="blog-item.html">Новая коллекция уличной мебели собственного производства</a>
+						</div>
+						<div class="col-lg-3 index-examples-item index-examples-item--pic">
+							<div class="index-examples-item-image">
+								<a href="blog-item.html" class="stretched-link"></a>
+								<img src="img/example-4.jpg" class="img-fluid" width="600" height="880" />
+								<div class="index-examples-item-fader"></div>
+								<div class="basic-button basic-button--white basic-button--arrowed">Подробнее</div>
+							</div>
+							<a href="blog-item.html">Особенности проектирования спортивных помещений общественного назначения</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="index-partners">
+				<div class="container">
+					<h2 class="basic-title text-center">Нам доверяют</h2>
+					<div class="partners-swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/h&m.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/trip.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/asana.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/netflix.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/sup.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/ikea.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+							<div class="swiper-slide partners-item">
+								<a href="#" target="_blank">
+									<img src="img/h&m.png" widtnh="184" height="184" class="img-fluid">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="index-feedback">
+				<h2 class="basic-title text-center">Отзывы</h2>
+				<div class="feedback-wrapper">
+
+				</div>
+			</section>
+			<section class="index-order-block">
+				<div class="container">
+					<div class="row index-order-wrapper">
+						<h2 class="basic-title">Рассчитать стоимость</h2>
+						<form action="#" class="order-form order-form--index">
+							<div class="col-xxl-7 col-xl-8 col-lg-9 col-md-10">
+								<div class="row form-row">
+									<div class="col-xxl-5 col-lg-6 col-md-8 input-wrapper">
+										<input type="text" name="username" placeholder="Как вас зовут?*" required />
+									</div>
+									<div class="col-xxl-5 col-lg-6 col-md-8 input-wrapper">
+										<input type="text" name="phone" class="phone-input" placeholder="Ваш телефон*" required />
+									</div>
+									<div class="col-xxl-2 col-lg-6 col-md-4 submit-wrapper">
+										<button type="submit" class="basic-button basic-button--arrow">Рассчитать стоимость</button>
+									</div>
+									<div class="col-xxl-12 col-lg-6 agree-wrapper">
+										<span class="wpcf7-form-control-wrap" data-name="accept-policy-agree-full">
+											<span class="wpcf7-form-control wpcf7-acceptance">
+												<span class="wpcf7-list-item">
+													<label>
+														<input type="checkbox" name="accept-policy-agree-full" value="1" aria-invalid="false" class="form-check-input" />
+														<span class="wpcf7-list-item-label">
+															Я даю
+															<a href="/wp-content/uploads/2022/11/policy.pdf" target="_blank">согласие на обработку персональных данных</a>
+														</span>
+													</label>
+												</span>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer-wrapper">
+					<div class="col-xxl-2 col-lg-3 footer-logo-wrapper">
+						<a href="/"><img src="img/logo-dark.svg" width="223" height="50" class="img-fluid logo" /></a>
+						<div class="social">
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/vk-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/yt-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/tg-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/wh-icon.svg" width="40" height="40" />
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 footer-menu footer-menu--left">
+						<nav>
+							<ul>
+								<li class="menu-item current-menu-item page_item"><a href="" aria-current="page">Главная</a></li>
+								<li class="menu-item"><a href="#">О компании</a></li>
+								<li class="menu-item"><a href="#">Каталог</a></li>
+								<li class="menu-item"><a href="#">Реализованные проекты</a></li>
+								<li class="menu-item"><a href="#">Готовые решения</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-3 footer-menu footer-menu--right">
+						<nav>
+							<ul>
+								<li class="menu-item"><a href="#">Блог</a></li>
+								<li class="menu-item"><a href="#">Клиентам</a></li>
+								<li class="menu-item"><a href="#">Специалистам</a></li>
+								<li class="menu-item"><a href="#">Конакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xxl-4 col-lg-3 footer-contacts">
+						<div class="footer-contacts-item">
+							<h4 class="footer-contacts-itme-title">Для звонков по всей России</h4>
+							<a href="tel:+78009000000" class="large">8&nbsp;800&nbsp;900&nbsp;00&nbsp;00</a>
+						</div>
+						<div class="footer-contacts-item">
+							<h4 class="footer-contacts-itme-title">Адрес производства</h4>
+							<span class="large">г.&nbsp;Кемерово, ул.&nbsp;Светлая,&nbsp;5</span>
+						</div>
+						<a href="mailto:" class="basic-button basic-button--light basic-button--arrowed">Написать письмо</a>
+						<div class="footer-contacts-item footer-copyright">
+							<h4 class="footer-contacts-itme-title">© 2024 Производственная компания Арт-Массив. Все права защищены.</h4>
+							<div class="dev">
+								<a href="https://mediatip.ru/" target="_blank">
+									<img src="img/copyright_black.png" width="40" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="js/fancybox.umd.js"></script>
+		<script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+		<script type="text/javascript" src="js/mmenu-light.js"></script>
+		<script>
+			const menu = new MmenuLight(document.querySelector("#mainMenu"), "(max-width: 991px)");
+			var navigator = menu.navigation({
+				selectedClass: "selected",
+				slidingSubmenus: true,
+				theme: "dark",
+				title: "",
+			});
+			var drawer = menu.offcanvas({
+				position: "left",
+			});
+			document.querySelector('a[href="#mainMenu"]').addEventListener("click", (evnt) => {
+				evnt.preventDefault();
+				drawer.open();
+			});
+			document.querySelector(".close-menu-button").addEventListener("click", (evnt) => {
+				evnt.preventDefault();
+				drawer.close();
+			});
+		</script>
+		<script type="text/javascript" src="js/front.js"></script>
+	</body>
+</html>
