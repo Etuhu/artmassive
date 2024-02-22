@@ -1,6 +1,9 @@
 $salad: #d9f23f;
 $salad_dark: #bbd134;
 $white: #ffffff;
-$black: #2e2a2a;
-$font: #202122;
+$black: rgb(46, 42, 42);
+$font: rgb(32, 33, 34);
 $red: #e31e24;
+
+$left-offset-desktop-large: calc((100vw - 2078px) / 2);
+$left-offset-desktop-stanadart: 10%;

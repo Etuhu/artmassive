@@ -4,6 +4,7 @@ new Swiper(".promo-swiper", {
     slidesPerGroup: 1,
     speed: 1000,
     simulateTouch: true,
+    touchReleaseOnEdges: true,
     // autoplay: {
     //     delay: 5000,
     // },
@@ -31,7 +32,7 @@ let productSliderParams = {
 	touchReleaseOnEdges: true,
 	freeMode: {
 		enabled: true,
-		sticky: true,
+		// sticky: true,
 	},
 	navigation: {},
 	pagination: {},
@@ -59,7 +60,7 @@ let productSliderParams = {
 		  spaceBetween: 20
 		},
 		1600: {
-		  slidesPerView: 4,
+		  slidesPerView: 5.5,
 		  slidesPerGroup: 1,
 		  spaceBetween: 30,
 		}
@@ -87,6 +88,20 @@ new Swiper(".partners-swiper", {
     spaceBetween: 194,
     watchOverflow: true,
 });
+
+//Прилипающая шапка
+let header = document.querySelector(".header");
+function onWindowScroll() {
+    if (window.scrollY > (header.clientHeight * 3)) {
+      header.classList.add("white");
+    }
+    else {
+      header.classList.remove("white")
+    }
+}
+
+window.addEventListener("scroll", onWindowScroll);
+window.addEventListener("DOMContentLoaded", onWindowScroll);
 
 //Кнопка прокрутки наверх
 var scrollButton = document.getElementById("top-button");

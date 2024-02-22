@@ -1,3 +1,83 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.2s ease;
+    .logo-wrapper {
+        .logo {
+            transition: 0.2s ease;
+        }
+    }
+    .header-wrapper {
+        align-items: center;
+    }
+    .top-menu-wrapper {
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            > li,
+            .menu-item {
+                > a {
+                    color: white;
+                    font-size: 1.25rem;
+                    font-weight: 500;
+                    line-height: 1;
+                    transition: 0.2s ease;
+                    &:hover {
+                        color: $salad;
+                        transition: 0.2s ease;
+                    }
+                }
+                &.dropdown {
+                    > a.dropdown-toggle {
+                        &[aria-expanded=true] {
+                            color: $salad;
+                        }
+                    }
+                }
+                &.green {
+                    > a {
+                        background-color: $salad;
+                        color: $black;
+                        padding: 13px 30px;
+                        border-radius: 80px;
+                        &:hover {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .dropdown-menu.show {
+                margin-top: 1rem !important;
+                padding: 0;
+                > li > a {
+                    color: $font;
+                    padding: 10px;
+                    font-size: 1rem;
+                    border-bottom: 1px solid rgba(32, 33, 34, 0.3);
+                    &:hover {
+                        color: $white;
+                        background-color: $font;
+                    }
+                }
+                > li:first-child,
+                > li:last-child {
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+.header--index {
+    background-image: linear-gradient(180deg, rgba(46,42,42,1) 0%, rgba(46,42,42,0) 100%);
+}
+
 .navbar-toggler-wrapper {
     align-items: center;
 }
@@ -91,6 +171,67 @@
         }
         @media (max-width: 767px) {
             bottom: -10px;
+        }
+    }
+}
+
+
+
+.header.white {
+    background-color: white;
+    background-image: unset;
+    box-shadow: 0px -3px 5px 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease;
+    .logo-wrapper {
+        .logo {
+            filter: invert(1);
+            transition: 0.2s ease;
+        }
+    }
+    .top-menu-wrapper {
+        .menu-list {
+            > li,
+            .menu-item {
+                > a {
+                    color: $font;
+                    &:hover {
+                        color: $font;
+                        opacity: 0.7;
+                    }
+                }
+                &.dropdown {
+                    > a.dropdown-toggle {
+                        &[aria-expanded=true] {
+                            color: $font;
+                        }
+                    }
+                }
+                &.green {
+                    > a {
+                        background-color: $salad;
+                        color: $black;
+                        padding: 13px 30px;
+                        border-radius: 80px;
+                        &:hover {
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dropdown .dropdown-toggle {
+        &::after {
+            content: url(../img/dropdown-arrow.png);
+        }
+        &:hover::after {
+            content: url(../img/dropdown-arrow.png);
+        }
+        &[aria-expanded=true] {
+            &::after {
+                content: url(../img/dropdown-arrow.png);
+            }
         }
     }
 }
