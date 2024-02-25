@@ -180,6 +180,9 @@ a {
 	.swiper-navigation + .basic-button {
 		margin-left: 75px;
 	}
+	.basic-title + .basic-button {
+		margin-left: auto;
+	}
 	+ .swiper {
 		margin-top: -1rem;
 	}
@@ -287,10 +290,9 @@ a {
 	&--light {
 		border-color: $white;
 		background-color: rgba(255, 255, 255, 0);
-	}
-	&--white {
 		&:hover {
 			color: $font;
+			background-color: $white;
 			> svg {
 				path {
 					stroke: $font;
@@ -300,6 +302,25 @@ a {
 		&::after {
 			background-color: $white;
 			transition: 0.2s ease;
+		}
+	}
+	&--white {
+		background-color: $white;
+		color: $font;
+		> svg {
+			path {
+				stroke: $font;
+			}
+		}
+		&:hover {
+			background-color: $white;
+			color: $font;
+			opacity: 0.7;
+			> svg {
+				path {
+					stroke: $font;
+				}
+			}
 		}
 	}
 	&--dark {
@@ -372,12 +393,8 @@ a {
 	&--red {
 		background-color: $red;
 		&:hover {
-			color: #eeeeee;
-			background-color: #ef7a81;
-		}
-		&:active {
-			color: #eeeeee;
-			background-color: #ef636b;
+			background-color: $red;
+			transform: scale(1.03);
 		}
 	}
 	&--grey {
@@ -543,9 +560,14 @@ a {
 		position: absolute;
 		left: 0;
 		top: 5px;
-		background-color: $white;
+		background-color: $black;
 		content: "";
 		border-radius: 50%;
+	}
+	&--white {
+		&::before {
+			background-color: $white;
+		}
 	}
 }
 
@@ -586,4 +608,14 @@ a {
 		padding-left: 0;
 		padding-right: 30px;
 	}
+	.swiper,
+	.index-examples-wrapper,
+	.index-about-content {
+		padding-left: $left-offset-desktop-large;
+	}
+}
+
+.index-sales {
+	padding-top: 7.5rem;
+	padding-bottom: 4rem;
 }

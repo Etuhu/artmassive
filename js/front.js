@@ -30,6 +30,7 @@ let productSliderParams = {
 	spaceBetween: 20,
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
+  slidesOffsetBefore: -30,
 	freeMode: {
 		enabled: true,
 		// sticky: true,
@@ -63,16 +64,17 @@ let productSliderParams = {
 		  slidesPerView: 5.5,
 		  slidesPerGroup: 1,
 		  spaceBetween: 30,
+      slidesOffsetBefore: -30,
 		}
 	}
 };
 
-//Заменяем параметры навигационных кнопок для слайдера с акционными товарами на главной и инициализируем слайдер
+//Заменяем параметры навигационных кнопок для слайдера с топовыми товарами на главной и инициализируем слайдер
 productSliderParams.navigation.nextEl = '.top-product-swiper-button-next';
 productSliderParams.navigation.prevEl = '.top-product-swiper-button-prev';
 new Swiper(".top-product-swiper", productSliderParams);
 
-//Заменяем параметры навигационных кнопок для слайдера с новыми товарами на главной и инициализируем слайдер
+//Заменяем параметры навигационных кнопок для слайдера с выгодными товарами на главной и инициализируем слайдер
 productSliderParams.navigation.nextEl = '.sales-swiper-button-next';
 productSliderParams.navigation.prevEl = '.sales-swiper-button-prev';
 new Swiper(".sales-swiper", productSliderParams);

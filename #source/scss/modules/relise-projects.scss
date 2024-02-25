@@ -1,0 +1,25 @@
+.relise-projects {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    border-top: 1px solid rgba(46, 42, 42, 0.2);
+    .relise-projects-wrapper {
+        .basic-title {
+            font-family: "Montserrat", sans-serif;
+            font-size: 5.5rem;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: unset;
+            position: relative;
+            width: min-content;
+            .counter {
+                position: absolute;
+                top: 0;
+                right: -30px;
+                font-family: "Montserrat", sans-serif;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1;
+            }
+        }
+    }
+}

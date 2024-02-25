@@ -1,0 +1,22 @@
+.index-banner {
+    position: relative;
+    .banner-wrapper {
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    .basic-button {
+        margin-bottom: 45px;
+        height: 53px;
+        font-size: 1.15rem;
+        font-family: "Affect", sans-serif;
+        text-transform: lowercase;
+    }
+}
