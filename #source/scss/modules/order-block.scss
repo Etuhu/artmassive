@@ -1,0 +1,163 @@
+.order-block {
+    min-height: 700px;
+    background-image: linear-gradient(90deg, rgb(46, 42, 42) 60%, rgba(86, 82, 119, 0) 75%), url(../img/order_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center, right center;
+    .order-wrapper {
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+        .basic-title {
+            color: $salad;
+            width: fit-content;
+        }
+    }
+}
+
+form {
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    select,
+    textarea {
+        height: 56px;
+        padding: 13px 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px;
+        border: 1px solid $white;
+        color: $white;
+        font-weight: 500;
+        font-size: 1.25rem;
+        line-height: normal;
+        width: 100%;
+        transition: 0.2s ease;
+        &::placeholder {
+            color: white;
+        }
+        @media (max-width: 1920px) {
+            height: 50px;
+        }
+        @media (max-width: 1699px) {
+            height: 40px;
+        }
+        @media (max-width: 1499px) {
+            height: 35px;
+        }
+        @media (max-width: 991px) {
+            font-size: 1.1rem;
+        }
+    }
+    input[type=text]:focus,
+    input[type=tel]:focus,
+    input[type=email]:focus,
+    select:focus,
+    textarea:focus {
+        border: 1px solid $red;
+        outline: unset;
+        box-shadow: unset;
+        transition: 0.2s ease;
+        &:not(.phone-input)::placeholder {
+            opacity: 0;
+        }
+    }
+    .input-wrapper {
+        @media (max-width: 1399px) {
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 10px;
+        }
+    }
+    .agree-wrapper {
+        color: rgb(218, 214, 214);
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+        font-weight: 300;
+        .wpcf7-list-item > label {
+            display: flex;
+            align-items: center;
+            a {
+                color: $white;
+                border-bottom: 1px solid $white;
+                &:hover {
+                    color: $salad_dark;
+                    border-bottom: 1px solid $salad_dark;
+                }
+            }
+        }
+        input[type=checkbox] {
+            margin-right: 15px;
+        }
+        input[type=checkbox] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            vertical-align: top;
+            outline: none;
+            transition: 0.2s ease;
+            background-color: rgba(0, 0, 0, 0);
+            cursor: pointer;
+            border-radius: 2px;
+            border: 1px solid $white;
+            @media (max-width: 1920px) {
+                width: 25px;
+                height: 25px;
+            }
+            @media (max-width: 1699px) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        /* Checked */
+        input[type=checkbox]:checked {
+            background-color: $salad_dark;
+            background-image: url(../img/checkbox.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 80%;
+        }
+
+        /* Hover */
+        input[type=checkbox]:focus,
+        input[type=checkbox]:hover {
+            box-shadow: unset;
+        }
+
+        /* Active */
+        input[type=checkbox]:active {
+            background: radial-gradient(126.67% 126.67% at 50% 50%, #3B3944 26.04%, #202122 100%);
+        }
+    }
+    .basic-button {
+        height: 56px;
+        width: 390px;
+        max-width: 100%;
+        @media (max-width: 1920px) {
+            height: 50px;
+        }
+        @media (max-width: 1699px) {
+            height: 40px;
+        }
+        @media (max-width: 1499px) {
+            height: 35px;
+        }
+        @media (max-width: 991px) {
+            font-size: 1.1rem;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            margin-top: 20px;
+        }
+        &:hover {
+            color: $black;
+        }
+    }
+    button[type=submit] {
+        border: 0;
+        box-shadow: unset;
+    }
+}

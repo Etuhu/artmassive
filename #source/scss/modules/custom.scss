@@ -345,9 +345,9 @@ a {
 		}
 	}
 	&--green {
-		border-color: $salad;
+		border-color: $salad_dark;
 		color: $white;
-		background-color: $salad;
+		background-color: $salad_dark;
 		&:hover {
 			color: $black;
 			> svg {

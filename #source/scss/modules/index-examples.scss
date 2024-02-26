@@ -27,6 +27,9 @@
 		.index-examples-item-link {
 			color: $black;
 			text-decoration: underline;
+			&:hover {
+				color: $salad_dark;
+			}
 		}
 		.index-examples-item-fader {
 			position: absolute;
@@ -41,14 +44,31 @@
 			align-items: flex-end;
             opacity: 0;
             transition: 0.2s ease;
-			.basic-button {
-                width: 70%;
-				margin-bottom: 5.5rem;
+			&:hover {
+				opacity: 1;
+				transition: 0.2s ease;
+			}
+		}
+		.image-link {
+			position: absolute;
+			bottom: 5.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 7;
+			opacity: 0;
+			width: 70%;
+            transition: 0.2s ease;
+			&:hover {
+				&::after {
+					background-color: $salad;
+					color: $black;
+				}
 			}
 		}
 	}
-	.index-examples-item:hover {
-		.index-examples-item-fader {
+	.index-examples-item-image:hover {
+		.index-examples-item-fader,
+		.image-link {
             opacity: 1;
             transition: 0.2s ease;
         }
