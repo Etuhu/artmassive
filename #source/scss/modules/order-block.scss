@@ -4,9 +4,16 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center, right center;
+    @media (max-width: 1920px) {
+        min-height: 550px;
+    }
     .order-wrapper {
         padding-top: 7rem;
         padding-bottom: 5rem;
+        @media (max-width: 1920px) {
+            padding-top: 6rem;
+            padding-bottom: 4rem;
+        }
         .basic-title {
             color: $salad;
             width: fit-content;

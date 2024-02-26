@@ -27,7 +27,7 @@ let productSliderParams = {
 	speed: 500,
 	grabCursor: true,
 	simulateTouch: true,
-	spaceBetween: 20,
+	spaceBetween: 0,
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
 	slidesOffsetBefore: -30,
@@ -61,9 +61,15 @@ let productSliderParams = {
 			spaceBetween: 20,
 		},
 		1600: {
+			slidesPerView: 4.5,
+			slidesPerGroup: 1,
+			spaceBetween: 0,
+			slidesOffsetBefore: -20,
+		},
+		1921: {
 			slidesPerView: 5.5,
 			slidesPerGroup: 1,
-			spaceBetween: 30,
+			spaceBetween: 0,
 			slidesOffsetBefore: -30,
 		},
 	},
@@ -93,6 +99,18 @@ new Swiper(".partners-swiper", {
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
 	// loopAddBlankSlides: false,
+	breakpoints: {
+		1600: {
+			slidesPerView: 6,
+			slidesPerGroup: 1,
+			spaceBetween: 100,
+		},
+		1921: {
+			slidesPerView: 6,
+			slidesPerGroup: 1,
+			spaceBetween: 194,
+		},
+	},
 });
 
 //Прилипающая шапка

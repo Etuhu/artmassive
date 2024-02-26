@@ -18,5 +18,11 @@
         font-size: 1.15rem;
         font-family: "Affect", sans-serif;
         text-transform: lowercase;
+        @media (max-width: 1920px) {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 1699px) {
+            margin-bottom: 15px;
+        }
     }
 }

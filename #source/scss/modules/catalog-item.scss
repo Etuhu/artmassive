@@ -1,9 +1,15 @@
 .catalog-item {
 	margin-bottom: 70px;
+    @media (max-width: 1920px) {
+        margin-bottom: 35px;
+    }
 	> .content {
 		padding: 30px;
 		transition: 0.2s ease;
 		border: 1px solid rgba(0, 0, 0, 0);
+        @media (max-width: 1920px) {
+            padding: 20px;
+        }
 	}
     .catalog-item-image-wrapper {
         aspect-ratio: 1/1;
@@ -16,6 +22,9 @@
 	}
 	.catalog-item-info {
 		padding-top: 40px;
+        @media (max-width: 1920px) {
+            padding-top: 25px;
+        }
 		.catalog-item-title-link {
 			color: $font;
             transition: 0.2s ease;
@@ -45,9 +54,15 @@
         align-items: flex-start;
         flex-wrap: wrap;
         margin-top: 2.5rem;
+        @media (max-width: 1920px) {
+            margin-top: 2rem;
+        }
         .catalog-item-price {
             flex-shrink: 1;
             margin-bottom: 20px;
+            @media (max-width: 1920px) {
+                margin-bottom: 10px;
+            }
             .price-value {
                 display: block;
                 color: $font;
