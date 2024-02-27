@@ -74,6 +74,8 @@ body {
 }
 
 .container {
+	max-width: 100%;
+	width: 100%;
 	@media (min-width: 1200px) and (max-width: 1920px) {
 		max-width: 80%;
 	}
@@ -147,7 +149,7 @@ a {
 		font-size: 3.5rem;
 	}
 	@media (max-width: 991px) {
-		font-size: 3rem;
+		font-size: 4.2rem;
 	}
 	@media (max-width: 575px) {
 		font-size: 3.75rem;
@@ -173,6 +175,9 @@ a {
 .title-wrapper {
 	display: flex;
 	align-items: flex-end;
+	@media (max-width: 991px) {
+		align-items: flex-start;
+	}
 	.basic-title {
 		margin-bottom: 0;
 	}
@@ -246,7 +251,8 @@ a {
 		font-size: 1rem;
 	}
 	@media (max-width: 991px) {
-		padding: 19px 70px;
+		padding: 14px 20px;
+		font-size: 1.25rem;
 	}
 	@media (max-width: 767px) {
 		padding: 15px 66px;
@@ -290,6 +296,10 @@ a {
 				width: 35px;
 				height: 17px;
 			}
+			@media (max-width: 991px) {
+				width: 42px;
+				height: 26px;
+			}
 		}
 		> span {
 			padding-right: 15px;
@@ -298,6 +308,9 @@ a {
 			}
 			@media (max-width: 1399px) {
 				padding-right: 5px;
+			}
+			@media (max-width: 991px) {
+				padding-right: 10px;
 			}
 		}
 		&:hover {
@@ -511,6 +524,10 @@ a {
 			width: 40px;
 			height: 40px;
 		}
+		@media (max-width: 991px) {
+			width: 50px;
+			height: 50px;
+		}
 		&::after {
 			content: "";
 			width: 15px;
@@ -556,6 +573,11 @@ a {
 		@media (max-width: 1920px) {
 			width: 13px;
 			height: 13px;
+			left: 15px;
+		}
+		@media (max-width: 991px) {
+			width: 16px;
+			height: 16px;
 			left: 15px;
 		}
 	}
@@ -625,11 +647,28 @@ a {
 	}
 }
 
+.index-top-product {
+	@media (max-width: 991px) {
+		padding-bottom: 3rem;
+	}
+}
+
 .index-sales {
 	padding-top: 7.5rem;
 	padding-bottom: 4rem;
 	@media (max-width: 1920px) {
 		padding-top: 5.5rem;
 		padding-bottom: 3rem;
+	}
+	@media (max-width: 991px) {
+		padding-top: 3.5rem;
+		padding-bottom: 7rem;
+	}
+}
+
+.all-feed-link {
+	@media (max-width: 991px) {
+		width: calc(100% - 60px);
+		margin-left: 30px;
 	}
 }

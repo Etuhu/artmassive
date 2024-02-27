@@ -12,7 +12,7 @@
         }
     }
     .header-wrapper {
-        align-items: flex-start;
+        align-items: center;
     }
     .top-menu-wrapper {
         .menu-list {
@@ -112,6 +112,12 @@
         width: fit-content;
         height: 100%;
         color: white;
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1;
+        &:hover {
+            color: $salad_dark;
+        }
     }
 }
 .navbar-toggler {
@@ -249,6 +255,14 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .navbar-toggler-wrapper {
+        > a {
+            color: $black;
+            &:hover {
+                color: $salad_dark;
             }
         }
     }

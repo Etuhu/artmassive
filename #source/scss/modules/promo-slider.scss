@@ -12,6 +12,9 @@
 		@media (max-width: 1399px) {
 			bottom: 50px;
 		}
+		@media (max-width: 991px) {
+			bottom: 90px;
+		}
 	}
 	.swiper-slide {
 		position: relative;
@@ -50,6 +53,9 @@
 			@media (max-width: 1399px) {
 				padding-bottom: 50px;
 			}
+			@media (max-width: 991px) {
+				padding-bottom: 90px;
+			}
 			.caption-content {
 				width: 100%;
 				height: 100%;
@@ -77,6 +83,10 @@
 						font-size: 3rem;
 						margin-bottom: 1.5rem;
 					}
+					@media (max-width: 991px) {
+						font-size: 3.75rem;
+						margin-bottom: 3.5rem;
+					}
 				}
 				.caption-description {
 					display: flex;
@@ -93,6 +103,13 @@
 						@media (max-width: 1499px) {
 							padding-right: 10px;
 						}
+						@media (max-width: 991px) {
+							font-size: 1rem;
+							font-weight: 400;
+							max-width: 33%;
+							padding-right: 0;
+							margin-bottom: 3.5rem;
+						}
 					}
 					.project-title {
 						h3 {
@@ -106,6 +123,10 @@
 							}
 							@media (max-width: 1399px) {
 								line-height: 1.3;
+							}
+							@media (max-width: 991px) {
+								font-size: 1.5rem;
+								margin-bottom: 3.5rem;
 							}
 						}
 					}

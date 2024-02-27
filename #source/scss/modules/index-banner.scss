@@ -11,6 +11,9 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+        @media (max-width: 991px) {
+            justify-content: center;
+        }
     }
     .basic-button {
         margin-bottom: 45px;
@@ -31,6 +34,16 @@
         @media (max-width: 1399px) {
             height: 35px;
             font-size: 0.9rem;
+        }
+        @media (max-width: 991px) {
+            height: 56px;
+            width: calc(100vw - 60px);
+            font-size: 1.25rem;
+            margin-bottom: 78px;
+            &:hover {
+                transform: unset;
+                opacity: 0.7;
+            }
         }
     }
 }
