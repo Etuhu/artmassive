@@ -6,6 +6,10 @@
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
+    @media (max-width: 1199px) {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
     .relise-projects-wrapper {
         .basic-title {
             font-family: "Montserrat", sans-serif;
@@ -15,6 +19,9 @@
             text-transform: unset;
             position: relative;
             width: min-content;
+            @media (max-width: 1199px) {
+                font-size: 4.5rem;
+            }
             .counter {
                 position: absolute;
                 top: 0;

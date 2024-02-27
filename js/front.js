@@ -56,9 +56,16 @@ let productSliderParams = {
 			spaceBetween: 15,
 		},
 		992: {
-			slidesPerView: 3,
+			slidesPerView: 3.5,
 			slidesPerGroup: 1,
-			spaceBetween: 20,
+			spaceBetween: 0,
+			slidesOffsetBefore: -20,
+		},
+		1200: {
+			slidesPerView: 3.5,
+			slidesPerGroup: 1,
+			spaceBetween: 0,
+			slidesOffsetBefore: -20,
 		},
 		1600: {
 			slidesPerView: 4.5,
@@ -100,6 +107,21 @@ new Swiper(".partners-swiper", {
 	touchReleaseOnEdges: true,
 	// loopAddBlankSlides: false,
 	breakpoints: {
+		992: {
+			slidesPerView: 5,
+			slidesPerGroup: 1,
+			spaceBetween: 50,
+		},
+		1200: {
+			slidesPerView: 6,
+			slidesPerGroup: 1,
+			spaceBetween: 50,
+		},
+		1400: {
+			slidesPerView: 6,
+			slidesPerGroup: 1,
+			spaceBetween: 75,
+		},
 		1600: {
 			slidesPerView: 6,
 			slidesPerGroup: 1,

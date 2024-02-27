@@ -1,10 +1,19 @@
 .index-examples {
 	.title-wrapper {
 		margin-bottom: 3rem;
+		@media (max-width: 1199px) {
+			margin-bottom: 2rem;
+		}
 		.basic-title {
 			max-width: 40%;
 			@media (max-width: 1920px) {
 				max-width: 50%;
+			}
+			@media (max-width: 1499px) {
+				max-width: 60%;
+			}
+			@media (max-width: 1199px) {
+				max-width: 70%;
 			}
 		}
 	}
@@ -26,10 +35,16 @@
 			position: relative;
 			margin-bottom: 2rem;
 			z-index: 0;
+			@media (max-width: 1499px) {
+				margin-bottom: 1rem;
+			}
 		}
 		.index-examples-item-link {
 			color: $black;
 			text-decoration: underline;
+			@media (max-width: 1199px) {
+				font-size: 0.8rem;
+			}
 			&:hover {
 				color: $salad_dark;
 			}
@@ -61,6 +76,12 @@
 			opacity: 0;
 			width: 70%;
             transition: 0.2s ease;
+			@media (max-width: 1699px) {
+				bottom: 3.5rem;
+			}
+			@media (max-width: 1399px) {
+				bottom: 2rem;
+			}
 			&:hover {
 				&::after {
 					background-color: $salad;
@@ -83,5 +104,9 @@
 	padding-bottom: 8rem;
 	@media (max-width: 1920px) {
 		padding-bottom: 4rem;
+	}
+	@media (max-width: 1199px) {
+		padding-top: 3rem;
+		padding-bottom: 0;
 	}
 }

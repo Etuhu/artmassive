@@ -2,6 +2,10 @@
     .footer-wrapper {
         padding-top: 3.75rem;
         padding-bottom: 3.5rem;
+        @media (max-width: 1399px) {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
     }
     .footer-logo-wrapper {
         .logo {
@@ -12,6 +16,15 @@
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
+        @media (max-width: 1699px) {
+            gap: 15px;
+        }
+        @media (max-width: 1499px) {
+            gap: 10px;
+        }
+        @media (max-width: 1399px) {
+            gap: 15px;
+        }
         .social-item {
             display: flex;
             justify-content: center;
@@ -24,6 +37,10 @@
 			@media (max-width: 1699px) {
                 width: 35px;
                 height: 35px;
+            }
+            @media (max-width: 1399px) {
+                width: 40px;
+                height: 40px;
             }
             > svg,
             > img {
@@ -116,6 +133,12 @@
             justify-content: space-between;
             margin-bottom: 0;
             margin-top: 4.75rem;
+			@media (max-width: 1699px) {
+                margin-top: 3.5rem;
+            }
+            @media (max-width: 1399px) {
+                gap: 10px;
+            }
             .dev {
                 img {
                     transition: 0.5s ease;

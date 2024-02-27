@@ -24,5 +24,13 @@
         @media (max-width: 1699px) {
             margin-bottom: 15px;
         }
+        @media (max-width: 1499px) {
+            height: 45px;
+            font-size: 1rem;
+        }
+        @media (max-width: 1399px) {
+            height: 35px;
+            font-size: 0.9rem;
+        }
     }
 }

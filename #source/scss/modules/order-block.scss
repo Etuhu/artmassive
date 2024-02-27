@@ -7,12 +7,26 @@
     @media (max-width: 1920px) {
         min-height: 550px;
     }
+	@media (max-width: 1399px) {
+        min-height: 475px;
+    }
+	@media (max-width: 1199px) {
+        min-height: 400px;
+    }
     .order-wrapper {
         padding-top: 7rem;
         padding-bottom: 5rem;
         @media (max-width: 1920px) {
             padding-top: 6rem;
             padding-bottom: 4rem;
+        }
+        @media (max-width: 1399px) {
+            padding-top: 5rem;
+            padding-bottom: 3rem;
+        }
+        @media (max-width: 1199px) {
+            padding-top: 4rem;
+            padding-bottom: 3rem;
         }
         .basic-title {
             color: $salad;
@@ -45,10 +59,11 @@ form {
             height: 50px;
         }
         @media (max-width: 1699px) {
-            height: 40px;
+            height: 45px;
+            font-size: 1.1rem;
         }
         @media (max-width: 1499px) {
-            height: 35px;
+            font-size: 1rem;
         }
         @media (max-width: 991px) {
             font-size: 1.1rem;
@@ -59,7 +74,7 @@ form {
     input[type=email]:focus,
     select:focus,
     textarea:focus {
-        border: 1px solid $red;
+        border: 1px solid $salad_dark;
         outline: unset;
         box-shadow: unset;
         transition: 0.2s ease;
@@ -80,6 +95,9 @@ form {
         margin-top: 1.5rem;
         font-size: 0.9rem;
         font-weight: 300;
+        @media (max-width: 1399px) {
+            margin-top: 0;
+        }
         .wpcf7-list-item > label {
             display: flex;
             align-items: center;
@@ -147,13 +165,10 @@ form {
             height: 50px;
         }
         @media (max-width: 1699px) {
-            height: 40px;
-        }
-        @media (max-width: 1499px) {
-            height: 35px;
+            height: 45px;
+            font-size: 0.95rem;
         }
         @media (max-width: 991px) {
-            font-size: 1.1rem;
         }
         @media (max-width: 767px) {
             width: 100%;
