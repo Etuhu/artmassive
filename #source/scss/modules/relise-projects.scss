@@ -30,6 +30,9 @@
             @media (max-width: 991px) {
                 font-size: 3.75rem;
             }
+            @media (max-width: 575px) {
+                font-size: 3rem;
+            }
             .counter {
                 position: absolute;
                 top: 0;

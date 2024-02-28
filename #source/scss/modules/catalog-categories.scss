@@ -327,10 +327,15 @@
 				flex-direction: column-reverse;
 			}
 			.categories-list {
-				column-count: 2;
-				li {
-					page-break-inside: avoid;
-					break-inside: avoid;
+				@media (max-width: 991px) {
+					column-count: 2;
+					li {
+						page-break-inside: avoid;
+						break-inside: avoid;
+					}
+				}
+				@media (max-width: 575px) {
+					column-count: 1;
 				}
 			}
 			.category-item-pic {

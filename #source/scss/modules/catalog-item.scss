@@ -37,6 +37,9 @@
 		.catalog-item-title-link {
 			color: $font;
             transition: 0.2s ease;
+            @media (max-width: 991px) {
+                font-size: 1.85rem;
+            }
             &:hover {
                 color: $salad_dark;
                 transition: 0.2s ease;
@@ -96,6 +99,9 @@
                 @media (max-width: 1399px) {
                     font-size: 1.25rem;
                 }
+                @media (max-width: 991px) {
+                    font-size: 1.6rem;
+                }
             }
             a {
                 opacity: 0;
@@ -106,6 +112,9 @@
                 transition: 0.2s ease;
                 @media (max-width: 991px) {
                     opacity: 1;
+                    text-decoration: underline;
+                    text-decoration-thickness: from-font;
+                    font-weight: 400;
                 }
                 &:hover {
                     color: $salad_dark;
@@ -119,14 +128,16 @@
         opacity: 0;
         @media (max-width: 991px) {
             opacity: 1;
+            padding-left: 30px;
+            padding-right: 30px;
         }
         span {
             text-transform: uppercase;
             font-family: "Affect", sans-serif;
             font-size: 1.1rem;
             font-weight: 300;
-            @media (max-width: 991px) {
-                font-size: 1rem;
+            @media (max-width: 767px) {
+                font-size: 1.3rem;
             }
         }
     }

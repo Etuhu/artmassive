@@ -9,6 +9,12 @@
     .logo-wrapper {
         .logo {
             transition: 0.2s ease;
+            @media (max-width: 767px) {
+                width: 200px;
+            }
+            @media (max-width: 575px) {
+                width: 160px;
+            }
         }
     }
     .header-wrapper {
@@ -115,6 +121,9 @@
         font-size: 1.3rem;
         font-weight: 500;
         line-height: 1;
+        @media (max-width: 767px) {
+            font-size: 1.35rem;
+        }
         &:hover {
             color: $salad_dark;
         }

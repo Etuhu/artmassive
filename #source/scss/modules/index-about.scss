@@ -11,6 +11,9 @@
     @media (max-width: 1499px) {
         height: 700px;
     }
+    @media (max-width: 767px) {
+        height: 600px;
+    }
     > .container {
         height: 100%;
     }
@@ -80,6 +83,12 @@
                 @media (max-width: 1920px) {
                     width: 350px;
                     height: auto;
+                }
+                @media (max-width: 991px) {
+                    width: 300px;
+                }
+                @media (max-width: 767px) {
+                    width: 250px;
                 }
             }
         }

@@ -140,7 +140,9 @@
 		}
 	}
 	.index-examples-item--pic + .index-examples-item--pic {
-		padding-top: 50px;
+		@media (max-width: 991px) {
+			padding-top: 50px;
+		}
 	}
 	.index-examples-item-image:hover {
 		.index-examples-item-fader,
