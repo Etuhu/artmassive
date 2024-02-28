@@ -3,6 +3,9 @@
     @media (max-width: 1920px) {
         margin-bottom: 35px;
     }
+    @media (max-width: 575px) {
+        margin-bottom: 20px;
+    }
 	> .content {
 		padding: 30px;
 		transition: 0.2s ease;
@@ -78,11 +81,18 @@
         @media (max-width: 1920px) {
             margin-top: 2rem;
         }
+        @media (max-width: 575px) {
+            flex-direction: column-reverse;
+        }
         .catalog-item-price {
             flex-shrink: 1;
             margin-bottom: 20px;
             @media (max-width: 1920px) {
                 margin-bottom: 10px;
+            }
+            @media (max-width: 575px) {
+                margin-top: 20px;
+                margin-bottom: 0;
             }
             .price-value {
                 display: block;
@@ -131,6 +141,10 @@
             padding-left: 30px;
             padding-right: 30px;
         }
+        @media (max-width: 575px) {
+            padding: 7px 20px;
+            width: 100%;
+        }
         span {
             text-transform: uppercase;
             font-family: "Affect", sans-serif;
@@ -138,6 +152,9 @@
             font-weight: 300;
             @media (max-width: 767px) {
                 font-size: 1.3rem;
+            }
+            @media (max-width: 575px) {
+                font-size: 1.1rem;
             }
         }
     }

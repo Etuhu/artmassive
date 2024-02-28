@@ -44,34 +44,24 @@ let productSliderParams = {
 			spaceBetween: 0,
 			slidesOffsetBefore: -14,
 		},
+		450: {
+			slidesPerView: 2,
+		},
 		768: {
 			slidesPerView: 2.5,
-			slidesPerGroup: 1,
-			spaceBetween: 0,
 			slidesOffsetBefore: -20,
 		},
 		992: {
 			slidesPerView: 3.5,
-			slidesPerGroup: 1,
-			spaceBetween: 0,
-			slidesOffsetBefore: -20,
 		},
 		1200: {
 			slidesPerView: 3.5,
-			slidesPerGroup: 1,
-			spaceBetween: 0,
-			slidesOffsetBefore: -20,
 		},
 		1600: {
 			slidesPerView: 4.5,
-			slidesPerGroup: 1,
-			spaceBetween: 0,
-			slidesOffsetBefore: -20,
 		},
 		1921: {
 			slidesPerView: 5.5,
-			slidesPerGroup: 1,
-			spaceBetween: 0,
 			slidesOffsetBefore: -30,
 		},
 	},
@@ -102,40 +92,65 @@ new Swiper(".partners-swiper", {
 	touchReleaseOnEdges: true,
 	// loopAddBlankSlides: false,
 	breakpoints: {
-		576: {
+		300: {
 			slidesPerView: 3,
 			slidesPerGroup: 1,
+			spaceBetween: 20,
+		},
+		576: {
+			slidesPerView: 3,
 			spaceBetween: 50,
 		},
 		768: {
 			slidesPerView: 4,
-			slidesPerGroup: 1,
-			spaceBetween: 50,
 		},
 		992: {
 			slidesPerView: 5,
-			slidesPerGroup: 1,
-			spaceBetween: 50,
 		},
 		1200: {
 			slidesPerView: 6,
-			slidesPerGroup: 1,
-			spaceBetween: 50,
 		},
 		1400: {
-			slidesPerView: 6,
-			slidesPerGroup: 1,
 			spaceBetween: 75,
 		},
 		1600: {
-			slidesPerView: 6,
-			slidesPerGroup: 1,
 			spaceBetween: 100,
 		},
 		1921: {
-			slidesPerView: 6,
-			slidesPerGroup: 1,
 			spaceBetween: 194,
+		},
+	},
+});
+
+//Параметры для мобильного слайдера блога на главной
+new Swiper(".blog-swiper", {
+	slidesPerView: 2.5,
+	slidesPerGroup: 1,
+	speed: 500,
+	grabCursor: true,
+	simulateTouch: true,
+	spaceBetween: 28,
+	watchOverflow: true,
+	touchReleaseOnEdges: true,
+	slidesOffsetBefore: -20,
+	freeMode: {
+		enabled: true,
+		// sticky: true,
+	},
+	breakpoints: {
+		300: {
+			slidesPerView: 1.5,
+			slidesPerGroup: 1,
+			spaceBetween: 20,
+			slidesOffsetBefore: -14,
+		},
+		450: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 2.5,
+			spaceBetween: 28,
+			slidesOffsetBefore: -10,
 		},
 	},
 });
@@ -195,3 +210,15 @@ if ($(window).width() > 991) {
 $(document).ready(function () {
 	$(".phone-input").inputmask("+7 (999) 999 9999");
 });
+
+//Инициализация плавного скролла для блока с id=butter
+butter.init({
+	wrapperId: 'butter',
+	cancelOnTouch: true,
+	wrapperDamper: 0.06
+});
+// butter.init({
+// 	wrapperId: 'butter-second',
+// 	cancelOnTouch: true,
+// 	wrapperDamper: 0.06
+// });

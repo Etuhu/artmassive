@@ -153,6 +153,7 @@ a {
 	}
 	@media (max-width: 575px) {
 		font-size: 3rem;
+		letter-spacing: -1px;
 	}
 }
 
@@ -171,12 +172,18 @@ a {
 	@media (max-width: 991px) {
 		margin-bottom: 2.5rem;
 	}
+	@media (max-width: 575px) {
+		margin-bottom: 2rem;
+	}
 }
 .title-wrapper {
 	display: flex;
 	align-items: flex-end;
 	@media (max-width: 991px) {
 		align-items: flex-start;
+	}
+	@media (max-width: 575px) {
+		align-items: center;
 	}
 	.basic-title {
 		margin-bottom: 0;
@@ -257,6 +264,10 @@ a {
 	@media (max-width: 767px) {
 		padding: 14px 20px;
 	}
+	@media (max-width: 575px) {
+		font-size: 1.15rem;
+		padding: 15px 10px;
+	}
 
 	> span {
 		position: relative;
@@ -299,6 +310,10 @@ a {
 			@media (max-width: 991px) {
 				width: 42px;
 				height: 26px;
+			}
+			@media (max-width: 575px) {
+				width: 30px;
+				height: 18px;
 			}
 		}
 		> span {
@@ -508,6 +523,9 @@ a {
 	align-items: center;
 	gap: 10px;
 	width: fit-content;
+	@media (max-width: 575px) {
+		gap: 5px;
+	}
 	.swiper-button {
 		position: unset;
 		display: flex;
@@ -564,6 +582,9 @@ a {
 	@media (max-width: 767px) {
 		padding-left: 35px;
 	}
+	@media (max-width: 575px) {
+		padding-left: 30px;
+	}
 	&::before {
 		width: 16px;
 		height: 16px;
@@ -588,6 +609,9 @@ a {
 			height: 10px;
 			left: 10px;
 		}
+		// @media (max-width: 575px) {
+		// 	display: none;
+		// }
 	}
 	&--white {
 		&::before {
@@ -678,5 +702,9 @@ a {
 	@media (max-width: 991px) {
 		width: calc(100% - 60px);
 		margin-left: 30px;
+	}
+	@media (max-width: 575px) {
+		width: calc(100% - 40px);
+		margin-left: 20px;
 	}
 }

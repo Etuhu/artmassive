@@ -4,6 +4,9 @@
 		@media (max-width: 1199px) {
 			margin-bottom: 2rem;
 		}
+		@media (max-width: 575px) {
+			margin-bottom: 10px;
+		}
 		.basic-title {
 			max-width: 40%;
 			@media (max-width: 1920px) {
@@ -18,6 +21,9 @@
 			@media (max-width: 991px) {
 				max-width: 75%;
 			}
+			@media (max-width: 575px) {
+				max-width: 100%;
+			}
 		}
 	}
 	.index-examples-wrapper {
@@ -27,6 +33,9 @@
 		@media (max-width: 991px) {
 			padding-top: 2.5rem;
 			padding-bottom: 70px;
+		}
+		@media (max-width: 575px) {
+			padding-bottom: 30px;
 		}
 	}
 	.index-examples-item {
@@ -51,8 +60,14 @@
 			> img {
 				@media (max-width: 991px) {
 					width: 100%;
-					height: 600px;
+					height: auto;
+					max-height: 600px;
 					object-fit: cover;
+					aspect-ratio: 931/600;
+				}
+				@media (max-width: 575px) {
+					max-height: 251px;
+					aspect-ratio: 342/251;
 				}
 			}
 		}
@@ -67,6 +82,9 @@
 				font-size: 1.25rem;
 				font-weight: 300;
 				line-height: 1.5;
+			}
+			@media (max-width: 575px) {
+				font-size: 1rem;
 			}
 			&:hover {
 				color: $salad_dark;
@@ -112,6 +130,7 @@
 				display: none;
 			}
 			&:hover {
+				border-color: $salad;
 				&::after {
 					background-color: $salad;
 					color: $black;
@@ -122,6 +141,9 @@
 	.index-examples-item--text {
 		@media (max-width: 991px) {
 			padding-bottom: 50px;
+		}
+		@media (max-width: 575px) {
+			padding-bottom: 35px;
 		}
 	}
 	.index-examples-item--pic {
@@ -138,10 +160,16 @@
 				bottom: 0;
 			}
 		}
+		@media (max-width: 575px) {
+			padding-bottom: 30px;
+		}
 	}
 	.index-examples-item--pic + .index-examples-item--pic {
 		@media (max-width: 991px) {
 			padding-top: 50px;
+		}
+		@media (max-width: 575px) {
+			padding-top: 30px;
 		}
 	}
 	.index-examples-item-image:hover {
@@ -165,5 +193,29 @@
 	}
 	@media (max-width: 991px) {
 		padding-bottom: 4rem;
+	}
+	.index-examples-wrapper {
+		> .index-examples-item--pic {
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		.blog-swiper {
+			.index-examples-item--pic.swiper-slide {
+				padding-top: 0;
+			}
+			.index-examples-item-image {
+				> img {
+					@media (max-width: 991px) {
+						max-height: unset;
+						aspect-ratio: unset;
+					}
+					@media (max-width: 575px) {
+						max-height: unset;
+						aspect-ratio: unset;
+					}
+				}
+			}
+		}
 	}
 }
