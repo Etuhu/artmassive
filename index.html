@@ -31,12 +31,20 @@
 								<button type="button" class="close-menu-button" aria-label="Close">Закрыть</button>
 							</div>
 							<ul class="menu-list">
-								<li class="menu-item nav-item green"><a href="catalog.html" class="nav-link">Каталог</a></li>
+								<li class="menu-item nav-item green d-lg-block d-none"><a href="catalog.html" class="nav-link">Каталог</a></li>
 								<li class="menu-item menu-item-has-children nav-item dropdown d-lg-none">
 									<!--При активации мобильного меню удаляем всю ссылку и заменяем ее на span без атрибутов, либо просто скрываем ссылку и открываем span-->
 									<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8151" class="nav-link dropdown-toggle">Каталог</a>
 									<ul class="dropdown-menu">
-										<li class="menu-item nav-item"><a href="#" class="nav-link">Малые архитектурные формы</a></li>
+										<li class="menu-item nav-item">
+											<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8157" class="nav-link dropdown-toggle">Малые архитектурные формы</a>
+											<ul class="dropdown-menu">
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Малые архитектурные формы</a></li>
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Детские игровые комплексы</a></li>
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+												<li class="menu-item nav-item"><a href="catalog.html" class="nav-link">Все категории</a></li>
+											</ul>
+										</li>
 										<li class="menu-item nav-item"><a href="#" class="nav-link">Детские игровые комплексы</a></li>
 										<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
 										<li class="menu-item nav-item"><a href="catalog.html" class="nav-link">Все категории</a></li>
@@ -395,7 +403,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -420,7 +428,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -445,7 +453,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -470,7 +478,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -495,7 +503,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -520,7 +528,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -583,7 +591,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -608,7 +616,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -633,7 +641,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -658,7 +666,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -683,7 +691,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -708,7 +716,7 @@
 												</span>
 												<a href="catalog-item.html">Подробнее</a>
 											</div>
-											<a href="catalog-category.html" class="basic-button basic-button--dark-green order-button"><span>Заказать</span></a>
+											<button type="button" class="basic-button basic-button--dark-green order-button" data-bs-toggle="modal" data-bs-target="#orderModal"><span>Заказать</span></button>
 										</div>
 									</div>
 								</article>
@@ -1095,6 +1103,67 @@
 					</div>
 				</div>
 			</footer>
+
+			<!-- Форма заказа -->
+			<div class="modal order-modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+					<div class="modal-content form-modal">
+						<div class="modal-title-wrapper">
+							<h3 class="modal-title">
+								<span>Оформите заявку и</span>
+								получите скидку 5%
+								<span>на проект</span>
+							</h3>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+						</div>
+						<form action="#" class="order-form order-form--main" method="post">
+							<div class="row form-field-row">
+								<div class="col-md-6 form-field-wrapper">
+									<label class="form-label" for="username">
+										Контактные данные
+										<sup>*</sup>
+									</label>
+									<input class="form-input form-input--name" type="text" name="username" id="username" placeholder="Как вас зовут?" required />
+									<input class="form-input form-input--phone phone-input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required />
+								</div>
+								<div class="col-md-6 form-field-wrapper">
+									<label class="form-label" for="company">Дополнительно</label>
+									<input class="form-input form-input--company" type="text" name="company" id="company" placeholder="Название организации" />
+									<input class="form-input form-input--email" type="tel" name="email" id="email" placeholder="Электронная почта" />
+								</div>
+							</div>
+							<div class="row form-field-row">
+								<div class="col-md-6 form-field-wrapper">
+									<label class="form-label" for="comment">Комментарий к заказу</label>
+									<div class="form-field-wrapper">
+										<textarea name="comment" cols="40" rows="8" class="wpcf7-form-control wpcf7-textarea form-input" aria-invalid="false" placeholder="Напишите ваши комментарии"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="form-field-row">
+								<div class="agree-wrapper">
+									<span class="wpcf7-form-control-wrap" data-name="accept-policy-agree-full">
+										<span class="wpcf7-form-control wpcf7-acceptance">
+											<span class="wpcf7-list-item">
+												<label>
+													<input type="checkbox" name="accept-policy-agree-full" value="1" aria-invalid="false" class="form-check-input" />
+													<span class="wpcf7-list-item-label">
+														Я даю
+														<a href="/wp-content/uploads/2022/11/policy.pdf" target="_blank">согласие на обработку персональных данных</a>
+													</span>
+												</label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</div>
+							<button type="submit" class="basic-button order-btn">Отправить заявку</button>
+							<p>* – обязательно для заполнения</p>
+						</form>
+					</div>
+				</div>
+			</div>
+
 			<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 			<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
 			<script type="text/javascript" src="js/wow.min.js"></script>
@@ -1110,7 +1179,7 @@
 					selectedClass: "selected",
 					slidingSubmenus: true,
 					theme: "dark",
-					title: "",
+					title: "Меню",
 				});
 				var drawer = menu.offcanvas({
 					position: "left",

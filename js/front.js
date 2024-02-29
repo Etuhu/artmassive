@@ -139,13 +139,20 @@ new Swiper(".blog-swiper", {
 	},
 	breakpoints: {
 		300: {
-			slidesPerView: 1.5,
+			slidesPerView: 1.2,
 			slidesPerGroup: 1,
 			spaceBetween: 20,
 			slidesOffsetBefore: -14,
 		},
+		400: {
+			slidesPerView: 1.5,
+			spaceBetween: 20,
+			slidesOffsetBefore: -10,
+		},
 		450: {
-			slidesPerView: 2,
+			slidesPerView: 2.2,
+			spaceBetween: 20,
+			slidesOffsetBefore: -10,
 		},
 		768: {
 			slidesPerView: 2.5,
@@ -212,13 +219,22 @@ $(document).ready(function () {
 });
 
 //Инициализация плавного скролла для блока с id=butter
-butter.init({
-	wrapperId: 'butter',
-	cancelOnTouch: true,
-	wrapperDamper: 0.06
-});
 // butter.init({
-// 	wrapperId: 'butter-second',
+// 	wrapperId: 'butter',
 // 	cancelOnTouch: true,
 // 	wrapperDamper: 0.06
 // });
+
+
+//Удаляем лишние атрибуты у раскрывающихся пунктов мобильного меню
+if ($(window).width() < 992) {
+	let dropdownMenuLinks = document.querySelectorAll(".top-menu .dropdown-toggle");
+	dropdownMenuLinks.forEach(function(menuLink){
+		let menuLinkText = menuLink.innerHTML;
+		// Создаем новый span элемент, с текстовым содержанием, аналогичным текстовому содержанию ссылки
+		menuSpan = document.createElement('span');
+		menuSpan.textContent = menuLinkText;
+		// заменим ссылку menuLink на menuSpan
+		menuLink.replaceWith(menuSpan);
+	});
+}

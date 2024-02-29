@@ -1,0 +1,72 @@
+.order-modal {
+    .modal-dialog {
+        width: 1200px;
+        max-width: 50%;
+    }
+    .modal-content {
+        padding: 70px 50px;
+    }
+    .modal-title-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 3.5rem;
+    }
+    .modal-title {
+        text-transform: lowercase;
+        font-size: 4.2rem;
+        line-height: 0.8;
+        max-width: 70%;
+        font-weight: 700;
+        > span {
+            color: $salad_dark;
+        }
+    }
+    button.close {
+        background-color: unset;
+        border: 0;
+        color: $black;
+        font-size: 1rem;
+        text-decoration: underline;
+        &:hover {
+            color: $salad_dark;
+        }
+    }
+    form {
+        .form-label {
+            font-weight: 700;
+            color: $black;
+            font-size: 1.35rem;
+            margin-bottom: 1.3rem;
+        }
+        .form-field-wrapper {
+            margin-bottom: 40px;
+        }
+        input[type=text],
+        input[type=tel],
+        input[type=email],
+        select,
+        textarea {
+            color: #DAD6D6;
+            border-color: #DAD6D6;
+            margin-bottom: 28px;
+            &::placeholder {
+                color: #DAD6D6;
+            }
+        }
+        input[type=text]:hover,
+        input[type=tel]:hover,
+        input[type=email]:hover,
+        select:hover,
+        textarea:hover {
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+        input[type=text]:focus,
+        input[type=tel]:focus,
+        input[type=email]:focus,
+        select:focus,
+        textarea:focus {
+            border: 1px solid $salad_dark;
+        }
+    }
+}
