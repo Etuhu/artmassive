@@ -1,0 +1,16 @@
+.text-content {
+    p, li {
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: rgb(32, 33, 34);
+    }
+    p, ul, ol {
+        margin-bottom: 1.5rem;
+    }
+    a {
+        color: $salad_dark;
+        border-bottom: 1px solid $salad_dark;
+        text-decoration-thickness: from-font;
+    }
+}

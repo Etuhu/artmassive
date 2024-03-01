@@ -163,7 +163,7 @@ new Swiper(".blog-swiper", {
 });
 
 //Прилипающая шапка
-let header = document.querySelector(".header");
+let header = document.querySelector(".header--index");
 function onWindowScroll() {
 	if (window.scrollY > header.clientHeight * 3) {
 		header.classList.add("white");

@@ -127,6 +127,16 @@ a {
 .inner-page {
 	flex-grow: 1;
 	position: relative;
+	padding-top: 115px;
+	@media (max-width: 1199px) {
+		padding-top: 85px;
+	}
+	@media (max-width: 991px) {
+		padding-top: 100px;
+	}
+	@media (max-width: 575px) {
+		padding-top: 85px;
+	}
 	// padding-top: 80px;
 	// padding-bottom: 50px;
 	// @media (max-width: 1920px) {

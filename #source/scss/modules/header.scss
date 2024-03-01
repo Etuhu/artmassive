@@ -277,20 +277,17 @@
     }
     .dropdown .dropdown-toggle {
         &::after {
-            // content: url(../img/dropdown-arrow.png);
             content: "";
-            background-image: url(../img/dropdown-arrow-white.png);
+            background-image: url(../img/dropdown-arrow.png);
         }
         &:hover::after {
-            // content: url(../img/dropdown-arrow.png);
             content: "";
-            background-image: url(../img/dropdown-arrow-white.png);
+            background-image: url(../img/dropdown-arrow.png);
         }
         &[aria-expanded=true] {
             &::after {
-                // content: url(../img/dropdown-arrow.png);
                 content: "";
-                background-image: url(../img/dropdown-arrow-white.png);
+                background-image: url(../img/dropdown-arrow.png);
             }
         }
     }
