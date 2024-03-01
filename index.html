@@ -1092,7 +1092,7 @@
 								</svg>
 							</a>
 							<div class="footer-contacts-item footer-copyright">
-								<h4 class="footer-contacts-itme-title">© 2024 Производственная компания Арт-Массив. Все права защищены.</h4>
+								<h4 class="footer-contacts-itme-title">© 2024 Производственная компания Арт‑Массив. Все права защищены.</h4>
 								<div class="dev">
 									<a href="https://mediatip.ru/" target="_blank" title="Разработка: Медиатип">
 										<img src="img/copyright_black.png" width="40" />
@@ -1106,7 +1106,7 @@
 
 			<!-- Форма заказа -->
 			<div class="modal order-modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+				<div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down" role="document">
 					<div class="modal-content form-modal">
 						<div class="modal-title-wrapper">
 							<h3 class="modal-title">
@@ -1114,11 +1114,11 @@
 								получите скидку 5%
 								<span>на проект</span>
 							</h3>
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
 						</div>
 						<form action="#" class="order-form order-form--main" method="post">
 							<div class="row form-field-row">
-								<div class="col-md-6 form-field-wrapper">
+								<div class="col-lg-6 form-field-wrapper">
 									<label class="form-label" for="username">
 										Контактные данные
 										<sup>*</sup>
@@ -1126,18 +1126,22 @@
 									<input class="form-input form-input--name" type="text" name="username" id="username" placeholder="Как вас зовут?" required />
 									<input class="form-input form-input--phone phone-input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required />
 								</div>
-								<div class="col-md-6 form-field-wrapper">
+								<div class="col-lg-6 form-field-wrapper">
 									<label class="form-label" for="company">Дополнительно</label>
 									<input class="form-input form-input--company" type="text" name="company" id="company" placeholder="Название организации" />
-									<input class="form-input form-input--email" type="tel" name="email" id="email" placeholder="Электронная почта" />
+									<input class="form-input form-input--email" type="email" name="email" id="email" placeholder="Электронная почта" />
 								</div>
 							</div>
 							<div class="row form-field-row">
-								<div class="col-md-6 form-field-wrapper">
+								<div class="form-field-wrapper">
+									<label class="form-label" for="product">Информация о заказе</label>
+									<input size="40" class="form-input form-input--order" value="Скамья уличная трехместная ECO венге / черный" type="text" name="product" readonly="readonly">
+								</div>
+							</div>
+							<div class="row form-field-row">
+								<div class="form-field-wrapper">
 									<label class="form-label" for="comment">Комментарий к заказу</label>
-									<div class="form-field-wrapper">
-										<textarea name="comment" cols="40" rows="8" class="wpcf7-form-control wpcf7-textarea form-input" aria-invalid="false" placeholder="Напишите ваши комментарии"></textarea>
-									</div>
+									<textarea name="comment" cols="40" rows="6" class="form-input" placeholder="Напишите ваши комментарии"></textarea>
 								</div>
 							</div>
 							<div class="form-field-row">
@@ -1146,7 +1150,7 @@
 										<span class="wpcf7-form-control wpcf7-acceptance">
 											<span class="wpcf7-list-item">
 												<label>
-													<input type="checkbox" name="accept-policy-agree-full" value="1" aria-invalid="false" class="form-check-input" />
+													<input type="checkbox" name="accept-policy-agree-full" value="1" class="form-check-input" />
 													<span class="wpcf7-list-item-label">
 														Я даю
 														<a href="/wp-content/uploads/2022/11/policy.pdf" target="_blank">согласие на обработку персональных данных</a>
@@ -1157,7 +1161,7 @@
 									</span>
 								</div>
 							</div>
-							<button type="submit" class="basic-button order-btn">Отправить заявку</button>
+							<button type="submit" class="basic-button basic-button--dark-green order-btn"><span>Отправить заявку</span></button>
 							<p>* – обязательно для заполнения</p>
 						</form>
 					</div>

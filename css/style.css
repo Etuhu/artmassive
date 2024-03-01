@@ -364,10 +364,10 @@ template {
 html,
 body {
   height: 100%;
-  scroll-behavior: smooth;
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 12px;
 }
 @media (min-width: 768px) {
@@ -3403,10 +3403,8 @@ form input[type=tel],
 form input[type=email],
 form select,
 form textarea {
-  height: 56px;
   padding: 13px 30px;
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 80px;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-weight: 500;
@@ -3422,12 +3420,18 @@ form select::placeholder,
 form textarea::placeholder {
   color: white;
 }
+form input[type=text],
+form input[type=tel],
+form input[type=email],
+form select {
+  height: 56px;
+  border-radius: 80px;
+}
 @media (max-width: 1920px) {
   form input[type=text],
   form input[type=tel],
   form input[type=email],
-  form select,
-  form textarea {
+  form select {
     height: 50px;
   }
 }
@@ -3435,8 +3439,7 @@ form textarea::placeholder {
   form input[type=text],
   form input[type=tel],
   form input[type=email],
-  form select,
-  form textarea {
+  form select {
     height: 45px;
     font-size: 1.1rem;
   }
@@ -3445,8 +3448,7 @@ form textarea::placeholder {
   form input[type=text],
   form input[type=tel],
   form input[type=email],
-  form select,
-  form textarea {
+  form select {
     font-size: 1rem;
   }
 }
@@ -3454,8 +3456,7 @@ form textarea::placeholder {
   form input[type=text],
   form input[type=tel],
   form input[type=email],
-  form select,
-  form textarea {
+  form select {
     font-size: 1.25rem;
   }
 }
@@ -3463,9 +3464,18 @@ form textarea::placeholder {
   form input[type=text],
   form input[type=tel],
   form input[type=email],
-  form select,
-  form textarea {
+  form select {
     padding: 10px 20px;
+  }
+}
+form textarea {
+  border-radius: 35px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1399px) {
+  form textarea {
+    border-radius: 30px;
   }
 }
 form input[type=text]:focus,
@@ -3526,7 +3536,7 @@ form .agree-wrapper {
 }
 form .agree-wrapper .wpcf7-list-item > label {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 form .agree-wrapper .wpcf7-list-item > label a {
   color: #ffffff;
@@ -3558,6 +3568,7 @@ form .agree-wrapper input[type=checkbox] {
   cursor: pointer;
   border-radius: 2px;
   border: 1px solid #ffffff;
+  margin-top: 0;
 }
 @media (max-width: 1920px) {
   form .agree-wrapper input[type=checkbox] {
@@ -3589,7 +3600,7 @@ form .agree-wrapper input[type=checkbox]:hover {
   box-shadow: unset;
 }
 form .agree-wrapper input[type=checkbox]:active {
-  background: radial-gradient(126.67% 126.67% at 50% 50%, #3B3944 26.04%, #202122 100%);
+  background: radial-gradient(126.67% 126.67% at 50% 50%, #3b3944 26.04%, #202122 100%);
 }
 form .basic-button {
   height: 56px;
@@ -3626,12 +3637,44 @@ form button[type=submit] {
   box-shadow: unset;
 }
 
-.order-modal .modal-dialog {
-  width: 1200px;
-  max-width: 50%;
+@media (min-width: 1921px) {
+  .order-modal .modal-dialog {
+    width: 1200px;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1500px) and (max-width: 1920px) {
+  .order-modal .modal-dialog {
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1499px) {
+  .order-modal .modal-dialog {
+    max-width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .order-modal .modal-dialog {
+    height: auto;
+  }
 }
 .order-modal .modal-content {
   padding: 70px 50px;
+}
+@media (max-width: 1920px) {
+  .order-modal .modal-content {
+    padding: 50px;
+  }
+}
+@media (max-width: 1399px) {
+  .order-modal .modal-content {
+    padding: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal .modal-content {
+    padding: 30px 25px;
+  }
 }
 .order-modal .modal-title-wrapper {
   display: flex;
@@ -3639,12 +3682,44 @@ form button[type=submit] {
   justify-content: space-between;
   margin-bottom: 3.5rem;
 }
+@media (max-width: 1399px) {
+  .order-modal .modal-title-wrapper {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .order-modal .modal-title-wrapper {
+    margin-bottom: 2rem;
+  }
+}
 .order-modal .modal-title {
   text-transform: lowercase;
   font-size: 4.2rem;
   line-height: 0.8;
   max-width: 70%;
   font-weight: 700;
+}
+@media (max-width: 1920px) {
+  .order-modal .modal-title {
+    max-width: 75%;
+  }
+}
+@media (max-width: 1399px) {
+  .order-modal .modal-title {
+    font-size: 3.5rem;
+    max-width: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .order-modal .modal-title {
+    font-size: 4rem;
+    max-width: 85%;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal .modal-title {
+    font-size: 3rem;
+  }
 }
 .order-modal .modal-title > span {
   color: rgb(187, 209, 52);
@@ -3656,6 +3731,16 @@ form button[type=submit] {
   font-size: 1rem;
   text-decoration: underline;
 }
+@media (max-width: 767px) {
+  .order-modal button.close {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal button.close {
+    font-size: 1.15rem;
+  }
+}
 .order-modal button.close:hover {
   color: rgb(187, 209, 52);
 }
@@ -3665,38 +3750,163 @@ form button[type=submit] {
   font-size: 1.35rem;
   margin-bottom: 1.3rem;
 }
+@media (max-width: 991px) {
+  .order-modal form .form-label {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}
+.order-modal form .form-label sup {
+  color: #d9f23f;
+}
 .order-modal form .form-field-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+@media (max-width: 575px) {
+  .order-modal form .form-field-wrapper {
+    margin-bottom: 10px;
+  }
 }
 .order-modal form input[type=text],
 .order-modal form input[type=tel],
 .order-modal form input[type=email],
 .order-modal form select,
 .order-modal form textarea {
-  color: #DAD6D6;
-  border-color: #DAD6D6;
+  color: rgb(46, 42, 42);
+  border-color: #dad6d6;
   margin-bottom: 28px;
+  border: 1px solid #dad6d6;
+}
+@media (max-width: 1399px) {
+  .order-modal form input[type=text],
+  .order-modal form input[type=tel],
+  .order-modal form input[type=email],
+  .order-modal form select,
+  .order-modal form textarea {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .order-modal form input[type=text],
+  .order-modal form input[type=tel],
+  .order-modal form input[type=email],
+  .order-modal form select,
+  .order-modal form textarea {
+    font-size: 1.25rem;
+  }
 }
 .order-modal form input[type=text]::placeholder,
 .order-modal form input[type=tel]::placeholder,
 .order-modal form input[type=email]::placeholder,
 .order-modal form select::placeholder,
 .order-modal form textarea::placeholder {
-  color: #DAD6D6;
+  font-size: 1rem;
+  color: #dad6d6;
+}
+@media (max-width: 991px) {
+  .order-modal form input[type=text]::placeholder,
+  .order-modal form input[type=tel]::placeholder,
+  .order-modal form input[type=email]::placeholder,
+  .order-modal form select::placeholder,
+  .order-modal form textarea::placeholder {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 991px) {
+  .order-modal form input[type=text],
+  .order-modal form input[type=tel],
+  .order-modal form input[type=email],
+  .order-modal form select {
+    height: 56px;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal form input[type=text],
+  .order-modal form input[type=tel],
+  .order-modal form input[type=email],
+  .order-modal form select {
+    height: 43px;
+    border-radius: 25px;
+  }
+}
+.order-modal form textarea {
+  margin-bottom: 0;
+}
+@media (max-width: 575px) {
+  .order-modal form textarea {
+    border-radius: 20px;
+    padding: 15px 20px;
+    height: 100px;
+  }
 }
 .order-modal form input[type=text]:hover,
 .order-modal form input[type=tel]:hover,
 .order-modal form input[type=email]:hover,
 .order-modal form select:hover,
 .order-modal form textarea:hover {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(187, 209, 52);
 }
 .order-modal form input[type=text]:focus,
 .order-modal form input[type=tel]:focus,
 .order-modal form input[type=email]:focus,
 .order-modal form select:focus,
 .order-modal form textarea:focus {
-  border: 1px solid rgb(187, 209, 52);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.order-modal form input[type=text]:read-only {
+  cursor: default;
+  background-color: #f6f6f6;
+  color: #787373;
+}
+.order-modal form input[type=text]:read-only:hover, .order-modal form input[type=text]:read-only:focus {
+  border-color: #dad6d6;
+}
+.order-modal form .agree-wrapper {
+  margin-bottom: 20px;
+  color: rgb(46, 42, 42);
+}
+@media (max-width: 991px) {
+  .order-modal form .agree-wrapper {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal form .agree-wrapper {
+    font-size: 1rem;
+  }
+}
+.order-modal form .agree-wrapper .wpcf7-list-item > label a {
+  color: rgb(46, 42, 42);
+  text-decoration: underline;
+}
+.order-modal form .agree-wrapper input[type=checkbox] {
+  border: 1px solid #dad6d6;
+}
+.order-modal form .basic-button {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .order-modal form .basic-button {
+    height: 56px;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 767px) {
+  .order-modal form .basic-button {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 575px) {
+  .order-modal form .basic-button {
+    height: 48px;
+  }
+}
+.order-modal form .basic-button:hover {
+  color: rgb(46, 42, 42);
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgb(187, 209, 52);
 }
 
 .footer .footer-wrapper {
@@ -3913,6 +4123,17 @@ form button[type=submit] {
 @media (max-width: 991px) {
   .footer .footer-contacts .footer-copyright {
     align-items: center;
+  }
+}
+@media (max-width: 575px) {
+  .footer .footer-contacts .footer-copyright {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .footer .footer-contacts .footer-copyright .dev img {

@@ -1,72 +1,205 @@
 .order-modal {
-    .modal-dialog {
-        width: 1200px;
-        max-width: 50%;
-    }
-    .modal-content {
-        padding: 70px 50px;
-    }
-    .modal-title-wrapper {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        margin-bottom: 3.5rem;
-    }
-    .modal-title {
-        text-transform: lowercase;
-        font-size: 4.2rem;
-        line-height: 0.8;
-        max-width: 70%;
-        font-weight: 700;
-        > span {
-            color: $salad_dark;
+	.modal-dialog {
+		@media (min-width: 1921px) {
+            width: 1200px;
+            max-width: 50%;
         }
-    }
-    button.close {
-        background-color: unset;
-        border: 0;
-        color: $black;
-        font-size: 1rem;
-        text-decoration: underline;
-        &:hover {
-            color: $salad_dark;
+		@media (min-width: 1500px) and (max-width: 1920px) {
+			max-width: 60%;
+		}
+		@media (min-width: 992px) and (max-width: 1499px) {
+			max-width: 70%;
+		}
+        @media (max-width: 991px) {
+            height: auto;
         }
-    }
-    form {
-        .form-label {
-            font-weight: 700;
-            color: $black;
-            font-size: 1.35rem;
-            margin-bottom: 1.3rem;
+	}
+	.modal-content {
+		padding: 70px 50px;
+		@media (max-width: 1920px) {
+			padding: 50px;
+		}
+		@media (max-width: 1399px) {
+			padding: 40px;
+		}
+		@media (max-width: 575px) {
+			padding: 30px 25px;
+		}
+	}
+	.modal-title-wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-bottom: 3.5rem;
+		@media (max-width: 1399px) {
+			margin-bottom: 3rem;
+		}
+		@media (max-width: 991px) {
+            margin-bottom: 2rem;
         }
-        .form-field-wrapper {
-            margin-bottom: 40px;
+	}
+	.modal-title {
+		text-transform: lowercase;
+		font-size: 4.2rem;
+		line-height: 0.8;
+		max-width: 70%;
+		font-weight: 700;
+		@media (max-width: 1920px) {
+			max-width: 75%;
+		}
+		@media (max-width: 1399px) {
+			font-size: 3.5rem;
+			max-width: 80%;
+		}
+		@media (max-width: 991px) {
+            font-size: 4rem;
+            max-width: 85%;
         }
-        input[type=text],
-        input[type=tel],
-        input[type=email],
-        select,
-        textarea {
-            color: #DAD6D6;
-            border-color: #DAD6D6;
-            margin-bottom: 28px;
-            &::placeholder {
-                color: #DAD6D6;
+		@media (max-width: 575px) {
+            font-size: 3rem;
+        }
+		> span {
+			color: $salad_dark;
+		}
+	}
+	button.close {
+		background-color: unset;
+		border: 0;
+		color: $black;
+		font-size: 1rem;
+		text-decoration: underline;
+        @media (max-width: 767px) {
+            font-size: 1.25rem;
+        }
+        @media (max-width: 575px) {
+            font-size: 1.15rem;
+        }
+		&:hover {
+			color: $salad_dark;
+		}
+	}
+	form {
+		.form-label {
+			font-weight: 700;
+			color: $black;
+			font-size: 1.35rem;
+			margin-bottom: 1.3rem;
+            @media (max-width: 991px) {
+                font-size: 1.25rem;
+                margin-bottom: 20px;
+            }
+			sup {
+				color: $salad;
+			}
+		}
+		.form-field-wrapper {
+			margin-bottom: 20px;
+            @media (max-width: 575px) {
+                margin-bottom: 10px;
+            }
+		}
+		input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		select,
+		textarea {
+			color: $black;
+			border-color: #dad6d6;
+			margin-bottom: 28px;
+			border: 1px solid #dad6d6;
+			@media (max-width: 1399px) {
+				margin-bottom: 20px;
+			}
+            @media (max-width: 991px) {
+                font-size: 1.25rem;
+            }
+			&::placeholder {
+				font-size: 1rem;
+				color: #dad6d6;
+                @media (max-width: 991px) {
+                    font-size: 1.25rem;
+                }
+			}
+		}
+        input[type="text"],
+		input[type="tel"],
+		input[type="email"],
+		select {
+            @media (max-width: 991px) {
+                height: 56px;
+            }
+            @media (max-width: 575px) {
+                height: 43px;
+                border-radius: 25px;
             }
         }
-        input[type=text]:hover,
-        input[type=tel]:hover,
-        input[type=email]:hover,
-        select:hover,
-        textarea:hover {
-            border: 1px solid rgba(0, 0, 0, 0.5);
-        }
-        input[type=text]:focus,
-        input[type=tel]:focus,
-        input[type=email]:focus,
-        select:focus,
-        textarea:focus {
-            border: 1px solid $salad_dark;
-        }
-    }
+		textarea {
+			margin-bottom: 0;
+            @media (max-width: 575px) {
+                border-radius: 20px;
+                padding: 15px 20px;
+                height: 100px;
+            }
+		}
+		input[type="text"]:hover,
+		input[type="tel"]:hover,
+		input[type="email"]:hover,
+		select:hover,
+		textarea:hover {
+			border: 1px solid $salad_dark;
+		}
+		input[type="text"]:focus,
+		input[type="tel"]:focus,
+		input[type="email"]:focus,
+		select:focus,
+		textarea:focus {
+			border: 1px solid rgba(0, 0, 0, 0.5);
+		}
+		input[type="text"]:read-only {
+			cursor: default;
+			background-color: #f6f6f6;
+			color: #787373;
+			&:hover,
+			&:focus {
+				border-color: #dad6d6;
+			}
+		}
+		.agree-wrapper {
+			margin-bottom: 20px;
+			color: $black;
+            @media (max-width: 991px) {
+                font-size: 1.1rem;
+            }
+            @media (max-width: 575px) {
+                font-size: 1rem;
+            }
+		}
+		.agree-wrapper .wpcf7-list-item > label a {
+			color: $black;
+            text-decoration: underline;
+		}
+		.agree-wrapper input[type="checkbox"] {
+			border: 1px solid #dad6d6;
+		}
+		.basic-button {
+			width: 100%;
+			border: 1px solid rgba(255, 255, 255, 0);
+			margin-bottom: 20px;
+            @media (max-width: 991px) {
+                height: 56px;
+                font-size: 1.25rem;
+            }
+            @media (max-width: 767px) {
+                font-size: 1.4rem;
+            }
+            @media (max-width: 575px) {
+                height: 48px;
+            }
+			&:hover {
+				color: rgb(46, 42, 42);
+				background-color: rgba(255, 255, 255, 0);
+				border-color: $salad_dark;
+			}
+		}
+	}
 }

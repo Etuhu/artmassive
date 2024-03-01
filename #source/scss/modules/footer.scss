@@ -173,6 +173,15 @@
             @media (max-width: 991px) {
                 align-items: center;
             }
+            @media (max-width: 575px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
             .dev {
                 img {
                     transition: 0.5s ease;
