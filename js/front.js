@@ -162,18 +162,51 @@ new Swiper(".blog-swiper", {
 	},
 });
 
+new Swiper(".gallery-swiper", {
+	slidesPerView: 5,
+	slidesPerGroup: 1,
+	speed: 500,
+	simulateTouch: true,
+	spaceBetween: 30,
+	watchOverflow: true,
+	touchReleaseOnEdges: true,
+	navigation: {
+		nextEl: ".gallery-swiper-button-next",
+		prevEl: ".gallery-swiper-button-prev",
+	},
+	// loopAddBlankSlides: false,
+	breakpoints: {
+		300: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		576: {
+			slidesPerView: 3,
+		},
+		992: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+		1400: {
+			slidesPerView: 4,
+		},
+	},
+});
+
 //Прилипающая шапка
-let header = document.querySelector(".header--index");
+let headerIndex = document.querySelector(".header--index");
 function onWindowScroll() {
-	if (window.scrollY > header.clientHeight * 3) {
-		header.classList.add("white");
+	if (window.scrollY > headerIndex.clientHeight * 3) {
+		headerIndex.classList.add("white");
 	} else {
-		header.classList.remove("white");
+		headerIndex.classList.remove("white");
 	}
 }
 
-window.addEventListener("scroll", onWindowScroll);
-window.addEventListener("DOMContentLoaded", onWindowScroll);
+if (headerIndex) {
+	window.addEventListener("scroll", onWindowScroll);
+	window.addEventListener("DOMContentLoaded", onWindowScroll);
+}
 
 //Кнопка прокрутки наверх
 var scrollButton = document.getElementById("top-button");
@@ -232,9 +265,37 @@ if ($(window).width() < 992) {
 	dropdownMenuLinks.forEach(function(menuLink){
 		let menuLinkText = menuLink.innerHTML;
 		// Создаем новый span элемент, с текстовым содержанием, аналогичным текстовому содержанию ссылки
-		menuSpan = document.createElement('span');
+		menuSpan = document.createElement("span");
 		menuSpan.textContent = menuLinkText;
 		// заменим ссылку menuLink на menuSpan
 		menuLink.replaceWith(menuSpan);
 	});
 }
+
+//Отображение фильтров каталога по клику на кнопку "Фильтры"
+let openFiltersButton = document.getElementById("filters-open-button");
+let closeFiltersButton = document.querySelector(".catalog__wrapper-filters .btn-close");
+let catalogFilters = document.querySelector(".catalog__wrapper .catalog__wrapper-filters");
+let body = document.body;
+
+let openFiltersHandler = function () {
+	if (!catalogFilters.classList.contains('show')) {
+		catalogFilters.classList.add('show');
+		body.classList.add('fixed');
+	}
+}
+
+let closeFiltersHandler = function () {
+	if (catalogFilters.classList.contains('show')) {
+		catalogFilters.classList.remove('show');
+		body.classList.remove('fixed');
+	}
+}
+
+openFiltersButton.addEventListener('click', function() {
+	openFiltersHandler();
+});
+
+closeFiltersButton.addEventListener('click', function() {
+	closeFiltersHandler();
+});

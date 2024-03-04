@@ -1,0 +1,33 @@
+.catalog-item-page {
+    .catalog-item-header {
+        .inner-page-title {
+            text-transform: unset;
+            font-family: "Montserrat", sans-serif;
+        }
+        .header-parameters {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 100px;
+            .header-parameters-item {
+                font-size: 1rem;
+                line-height: 1;
+                b {
+                    font-weight: 600;
+                }
+                a {
+                    color: rgb(86, 82, 119);
+                    text-decoration: underline;
+                    &:hover {
+                        color: $salad_dark;
+                    }
+                }
+            }
+        }
+    }
+    .catalog-item-page-wrapper {
+        border-top: 1px solid rgba(46, 42, 42, 0.2);
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+}

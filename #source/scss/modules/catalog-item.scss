@@ -197,7 +197,9 @@
     @media (min-width: 1400px) and (max-width: 1599px) {
         width: 33.33333333%;
     }
-    // > .content {
-    //     padding-bottom: 10px;
-    // }
+    > .content {
+        @media (max-width: 575px) {
+            padding: 10px;
+        }
+    }
 }
