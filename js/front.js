@@ -162,36 +162,96 @@ new Swiper(".blog-swiper", {
 	},
 });
 
-new Swiper(".gallery-swiper", {
+// new Swiper(".gallery-swiper", {
+// 	slidesPerView: 5,
+// 	slidesPerGroup: 1,
+// 	speed: 500,
+// 	simulateTouch: true,
+// 	spaceBetween: 30,
+// 	watchOverflow: true,
+// 	touchReleaseOnEdges: true,
+// 	navigation: {
+// 		nextEl: ".gallery-swiper-button-next",
+// 		prevEl: ".gallery-swiper-button-prev",
+// 	},
+// 	breakpoints: {
+// 		300: {
+// 			slidesPerView: 3,
+// 			spaceBetween: 20,
+// 		},
+// 		576: {
+// 			slidesPerView: 3,
+// 		},
+// 		992: {
+// 			slidesPerView: 4,
+// 			spaceBetween: 30,
+// 		},
+// 		1400: {
+// 			slidesPerView: 4,
+// 		},
+// 	},
+// });
+
+const sliderItemThumbs = new Swiper(".catalog-item-gallery .swiper", {
 	slidesPerView: 5,
-	slidesPerGroup: 1,
-	speed: 500,
-	simulateTouch: true,
 	spaceBetween: 30,
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
 	navigation: {
-		nextEl: ".gallery-swiper-button-next",
-		prevEl: ".gallery-swiper-button-prev",
+		nextEl: ".slider__thumbs--item__next",
+		prevEl: ".slider__thumbs--item__prev"
 	},
-	// loopAddBlankSlides: false,
+	mousewheel: true,
+	freeMode: true,
 	breakpoints: {
-		300: {
-			slidesPerView: 3,
-			spaceBetween: 20,
+		0: {
+            spaceBetween: 5,
+            slidesPerView: 3,
+            mousewheel: false,
 		},
 		576: {
-			slidesPerView: 3,
+            spaceBetween: 10,
+            slidesPerView: 3,
 		},
-		992: {
-			slidesPerView: 4,
-			spaceBetween: 30,
+		768: {
+            slidesPerView: 3,
 		},
-		1400: {
-			slidesPerView: 4,
-		},
+        992: {
+            spaceBetween: 15,
+            slidesPerView: 3,
+        },
+        1200: {
+            spaceBetween: 20,
+            slidesPerView: 3.5,
+			mousewheel: true,
+        },
+        1400: {
+            slidesPerView: 4,
+        },
+        1700: {
+            spaceBetween: 25,
+            slidesPerView: 5,
+        },
+        1921: {
+            spaceBetween: 30,
+            slidesPerView: 5,
+        }
+	}
+});
+
+
+const sliderItemImages = new Swiper('.slider__images--item .swiper', {
+	slidesPerView: 1,
+	spaceBetween: 0,
+	mousewheel: false,
+	grabCursor: true,
+	watchOverflow: true,
+	touchReleaseOnEdges: true,
+	thumbs: {
+		swiper: sliderItemThumbs,
 	},
 });
+
 
 //Прилипающая шапка
 let headerIndex = document.querySelector(".header--index");
