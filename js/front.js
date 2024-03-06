@@ -215,21 +215,23 @@ const sliderItemThumbs = new Swiper(".catalog-item-gallery .swiper", {
 		},
 		768: {
             slidesPerView: 3,
+            spaceBetween: 10,
 		},
         992: {
             spaceBetween: 15,
             slidesPerView: 3,
         },
         1200: {
-            spaceBetween: 20,
+            spaceBetween: 15,
             slidesPerView: 3.5,
 			mousewheel: true,
         },
         1400: {
             slidesPerView: 4,
+            spaceBetween: 20,
         },
         1700: {
-            spaceBetween: 25,
+            spaceBetween: 20,
             slidesPerView: 5,
         },
         1921: {
@@ -247,6 +249,10 @@ const sliderItemImages = new Swiper('.slider__images--item .swiper', {
 	grabCursor: true,
 	watchOverflow: true,
 	touchReleaseOnEdges: true,
+	pagination: {
+		el: '.slider__images--item-pagination',
+		clickable: true
+	},
 	thumbs: {
 		swiper: sliderItemThumbs,
 	},
