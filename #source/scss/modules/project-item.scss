@@ -1,0 +1,57 @@
+.project-item-page {
+    .inner-page-title {
+        text-transform: unset;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 1.5rem;
+        @media (max-width: 1499px) {
+            font-size: 4rem;
+        }
+        @media (max-width: 1199px) {
+            font-size: 3.5rem;
+        }
+        @media (max-width: 991px) {
+            font-size: 3rem;
+        }
+    }
+    .project-item-page-wrapper {
+        border-top: 1px solid rgba(46, 42, 42, 0.2);
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .project-item-content {
+        padding-bottom: 5rem;
+        @media (max-width: 991px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .project-item-description {
+        @media (max-width: 991px) {
+            padding-top: 3rem;
+        }
+        @media (max-width: 767px) {
+            padding-top: 2rem;
+        }
+        .text-content {
+            padding-right: 20%;
+            @media (max-width: 1699px) {
+                padding-right: 10%;
+            }
+            @media (max-width: 1499px) {
+                padding-right: 0;
+            }
+            .point-text {
+				@media (max-width: 1399px) {
+					padding-left: 25px;
+				}
+				@media (max-width: 767px) {
+					padding-left: 20px;
+				}
+			}
+			.point-text::before {
+				@media (max-width: 1399px) {
+					left: 0;
+				}
+			}
+        }
+    }
+}
