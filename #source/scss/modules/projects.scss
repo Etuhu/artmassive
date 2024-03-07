@@ -1,0 +1,91 @@
+.catalog-page--projects {
+	.inner-page-title {
+		margin-bottom: 2rem;
+	}
+	.catalog__wrapper {
+		border-top: 1px solid rgba(46, 42, 42, 0.2);
+		padding-left: $left-offset-desktop-large;
+		@media (min-width: 1200px) and (max-width: 1920px) {
+			padding-left: $left-offset-desktop-standart;
+		}
+		@media (max-width: 1199px) {
+			padding-left: 20px;
+		}
+		@media (max-width: 575px) {
+			padding-left: 9px;
+		}
+        .catalog-sorting {
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+	}
+	.index-examples .index-examples-wrapper {
+		padding-top: 2rem;
+		border-top: 0;
+		.index-examples-item {
+			margin-bottom: 50px;
+			overflow: hidden;
+			@media (max-width: 991px) {
+				margin-bottom: 0;
+			}
+            &::after {
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+			.index-examples-item-link {
+				display: flex;
+				align-items: flex-start;
+				width: fit-content;
+				.pointer {
+					position: relative;
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					overflow: hidden;
+					flex-shrink: 0;
+					margin-right: 15px;
+                    margin-top: 3px;
+					@media (max-width: 991px) {
+						margin-top: 9px;
+					}
+					@media (max-width: 767px) {
+						margin-top: 5px;
+                        margin-right: 10px;
+					}
+					@media (max-width: 575px) {
+                        margin-right: 7px;
+					}
+					&::before,
+					&::after {
+						display: block;
+						width: 15px;
+						height: 15px;
+						border: 1px solid $black;
+						border-radius: 50%;
+						content: "";
+						transition: 0.2s ease;
+					}
+					&::after {
+						position: absolute;
+						left: 0;
+						top: 50%;
+						background-color: $black;
+						transform: translate(-100%, -50%);
+						z-index: 10;
+					}
+				}
+			}
+			.index-examples-item-link:hover {
+				.pointer::after {
+					transform: translate(0, -50%);
+					transition: 0.2s ease;
+				}
+			}
+            & + .index-examples-item {
+                padding-top: 0;
+            }
+		}
+	}
+}

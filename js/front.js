@@ -46,19 +46,27 @@ let productSliderParams = {
 		},
 		450: {
 			slidesPerView: 2,
+			slidesOffsetBefore: -14,
 		},
 		768: {
 			slidesPerView: 2.5,
-			slidesOffsetBefore: -20,
+			slidesOffsetBefore: -18,
 		},
 		992: {
 			slidesPerView: 3.5,
+			slidesOffsetBefore: -18,
 		},
 		1200: {
 			slidesPerView: 3.5,
+			slidesOffsetBefore: -18,
+		},
+		1400: {
+			slidesPerView: 4,
+			slidesOffsetBefore: -20,
 		},
 		1600: {
 			slidesPerView: 4.5,
+			slidesOffsetBefore: -20,
 		},
 		1921: {
 			slidesPerView: 5.5,
@@ -103,21 +111,33 @@ new Swiper(".partners-swiper", {
 		},
 		768: {
 			slidesPerView: 4,
+			slidesPerGroup: 1,
+			spaceBetween: 50,
 		},
 		992: {
 			slidesPerView: 5,
+			slidesPerGroup: 1,
+			spaceBetween: 50,
 		},
 		1200: {
 			slidesPerView: 6,
+			slidesPerGroup: 1,
+			spaceBetween: 50,
 		},
 		1400: {
 			spaceBetween: 75,
+			slidesPerView: 6,
+			slidesPerGroup: 1,
 		},
 		1600: {
 			spaceBetween: 100,
+			slidesPerView: 6,
+			slidesPerGroup: 1,
 		},
 		1921: {
 			spaceBetween: 194,
+			slidesPerView: 6,
+			slidesPerGroup: 1,
 		},
 	},
 });

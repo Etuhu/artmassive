@@ -49,6 +49,9 @@
 		@media (max-width: 1199px) {
 			padding-bottom: 3rem;
 		}
+		@media (max-width: 767px) {
+			padding-bottom: 1rem;
+		}
 	}
 	.slider__images--item {
 		.slider__images--item-pagination {
@@ -57,7 +60,7 @@
 			margin-bottom: 0;
 			padding-top: 10px;
 			padding-bottom: 10px;
-			@media (min-width: 992px) {
+			@media (min-width: 768px) {
 				display: none;
 			}
 			.swiper-pagination-bullet {
@@ -78,6 +81,9 @@
 		flex-direction: column;
 		align-items: flex-start;
 		.catalog-item-info-content {
+			@media (max-width: 767px) {
+				padding-bottom: 2rem;
+			}
 			table {
 				td,
 				th {
@@ -131,6 +137,9 @@
 				font-size: 1.9rem;
 				font-weight: 500;
 				line-height: 1;
+				@media (max-width: 767px) {
+					font-size: 2.65rem;
+				}
 				small {
 					font-weight: 300;
 					font-size: 1rem;
@@ -144,6 +153,15 @@
 					width: 155px;
 					height: 48px;
 				}
+				@media (max-width: 991px) {
+					width: 130px;
+					height: 40px;
+				}
+				@media (max-width: 767px) {
+					width: 125px;
+					height: 38px;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
@@ -156,6 +174,9 @@
 			padding-top: 15px;
 		}
 		@media (max-width: 991px) {
+			padding-top: 10px;
+		}
+		@media (max-width: 767px) {
 			padding-top: 10px;
 			display: none;
 		}
@@ -250,11 +271,17 @@
 			padding-top: 2rem;
 			padding-bottom: 3rem;
 		}
+		@media (max-width: 767px) {
+			padding-top: 1rem;
+		}
 		.catalog-item-description {
 			color: $black;
 			.point-text {
 				@media (max-width: 1399px) {
 					padding-left: 25px;
+				}
+				@media (max-width: 767px) {
+					padding-left: 20px;
 				}
 			}
 			.point-text::before {
@@ -279,6 +306,29 @@
 					}
 				}
 			}
+		}
+	}
+	.catalog-item-page-bottom-header .header-item,
+	.catalog-item-description-header {
+		font-family: "Montserrat", sans-serif;
+		text-transform: unset;
+		font-size: 1.25rem;
+		@media (max-width: 991px) {
+			font-size: 1.15rem;
+		}
+		@media (max-width: 767px) {
+			font-size: 1.25rem;
+		}
+		b {
+			font-weight: 700;
+		}
+	}
+	.catalog-item-description-header {
+		@media (max-width: 767px) {
+			margin-bottom: 2rem;
+		}
+		@media (max-width: 575px) {
+			margin-bottom: 1.5rem;
 		}
 	}
 	.catalog-item-page-banner {
