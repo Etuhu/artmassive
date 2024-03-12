@@ -152,7 +152,7 @@ a {
 	text-transform: uppercase;
 	color: $font;
 	margin-bottom: 4.5rem;
-	@media (max-width: 1499px) {
+	@media (max-width: 1799px) {
 		font-size: 4rem;
 	}
 	@media (max-width: 1199px) {
@@ -165,6 +165,12 @@ a {
 		font-size: 3rem;
 		letter-spacing: -1px;
 	}
+}
+
+.inner-page .basic-title,
+.basic-title.inner-page-title {
+	font-family: "Montserrat", sans-serif;
+	text-transform: unset;
 }
 
 .basic-title,

@@ -51,6 +51,9 @@
 }
 
 .catalog-page {
+    .inner-page-title {
+        text-transform: unset;
+    }
     .catalog-list {
         padding-bottom: 3rem;
         .catalog-item {
