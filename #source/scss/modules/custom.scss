@@ -147,7 +147,8 @@ a {
 .basic-title {
 	font-family: "Affect", sans-serif;
 	font-size: 4.2rem;
-	font-weight: 700;
+	// font-weight: 700;
+	font-weight: 500;
 	line-height: 0.8;
 	text-transform: uppercase;
 	color: $font;
@@ -171,6 +172,21 @@ a {
 .basic-title.inner-page-title {
 	font-family: "Montserrat", sans-serif;
 	text-transform: unset;
+	line-height: 1.2;
+	font-size: 3.8rem;
+	@media (max-width: 1799px) {
+		font-size: 3.6rem;
+	}
+	@media (max-width: 1199px) {
+		font-size: 3.5rem;
+	}
+	@media (max-width: 991px) {
+		font-size: 4.2rem;
+	}
+	@media (max-width: 575px) {
+		font-size: 3rem;
+		letter-spacing: -1px;
+	}
 }
 
 .basic-title,
@@ -699,7 +715,9 @@ a {
 	.title-wrapper,
 	.swiper,
 	.index-examples-wrapper,
-	.index-about-content {
+	.index-about-content,
+	.blog-item-page-header,
+	.blog-item-page-footer {
 		padding-left: $left-offset-desktop-large;
 		@media (min-width: 1200px) and (max-width: 1920px) {
 			padding-left: $left-offset-desktop-standart;
@@ -711,7 +729,9 @@ a {
 	.title-wrapper,
 	.swiper,
 	.index-examples-wrapper,
-	.index-about-content {
+	.index-about-content,
+	.blog-item-page-header,
+	.blog-item-page-footer {
 		padding-right: 30px;
 		@media (max-width: 1199px) {
 			padding-right: 20px;

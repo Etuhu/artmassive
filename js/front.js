@@ -20,6 +20,25 @@ new Swiper(".promo-swiper", {
 	},
 });
 
+new Swiper(".blog-item-page-swiper", {
+	slidesPerView: 1,
+	slidesPerGroup: 1,
+	speed: 1000,
+	simulateTouch: true,
+	touchReleaseOnEdges: true,
+	spaceBetween: 0,
+	watchOverflow: true,
+	pagination: {
+		el: ".blog-item-page-swiper-pagination",
+		clickable: "true",
+		type: "fraction"
+	},
+	navigation: {
+		nextEl: ".blog-item-page-swiper-button-next",
+		prevEl: ".blog-item-page-swiper-button-prev",
+	},
+});
+
 //Параметры для типового слайдера с карточками товаров
 let productSliderParams = {
 	slidesPerView: 5.5,

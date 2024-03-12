@@ -223,3 +223,24 @@
 		}
 	}
 }
+
+.index-examples--dark {
+	background-color: $black;
+	.index-examples-wrapper {
+		border-top-color: rgba(255, 255, 255, 0.5);
+	}
+	.title-wrapper .basic-title,
+	.index-examples-item {
+		color: $white;
+	}
+	.point-text::before {
+		border: 1px solid $white;
+	}
+	.index-examples-item .index-examples-item-link {
+		color: $white;
+	}
+}
+
+.inner-page .index-examples--blog {
+	padding-bottom: 2rem;
+}

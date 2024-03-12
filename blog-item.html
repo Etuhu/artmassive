@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Арт Массив - Запись блога</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="img/favicon.ico" rel="shortcut icon" />
+		<link href="css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/animate.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/mmenu-light.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/jquery.mCustomScrollbar.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/fancybox.css" />
+		<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="css/style.css.map" media="screen" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div id="pre-loader" class="pre-loader" style="opacity: 0; display: none"></div>
+		<div class="fader"></div>
+
+		<div class="header header--inner white fixed-top">
+			<div class="container">
+				<div class="header-wrapper row">
+					<div class="col-lg-2 col-sm-5 col-6 logo-wrapper">
+						<a href="/"><img src="img/logo.svg" width="250" height="55" class="img-fluid logo" /></a>
+					</div>
+					<div class="col-lg-10 col-sm-5 col-4 top-menu-wrapper hidden">
+						<nav class="top-menu" role="navigation" id="mainMenu">
+							<div class="header-menu header-menu--mobile d-lg-none d-flex">
+								<img src="img/logo.svg" width="250" height="55" class="img-fluid logo logo--mobile" />
+								<button type="button" class="close-menu-button" aria-label="Close">Закрыть</button>
+							</div>
+							<ul class="menu-list">
+								<li class="menu-item nav-item green d-lg-block d-none"><a href="catalog.html" class="nav-link">Каталог</a></li>
+								<li class="menu-item menu-item-has-children nav-item dropdown d-lg-none">
+									<!--При активации мобильного меню удаляем всю ссылку и заменяем ее на span без атрибутов, либо просто скрываем ссылку и открываем span-->
+									<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8151" class="nav-link dropdown-toggle">Каталог</a>
+									<ul class="dropdown-menu">
+										<li class="menu-item nav-item">
+											<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8157" class="nav-link dropdown-toggle">Малые архитектурные формы</a>
+											<ul class="dropdown-menu">
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Малые архитектурные формы</a></li>
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Детские игровые комплексы</a></li>
+												<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+												<li class="menu-item nav-item"><a href="catalog.html" class="nav-link">Все категории</a></li>
+											</ul>
+										</li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Детские игровые комплексы</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+										<li class="menu-item nav-item"><a href="catalog.html" class="nav-link">Все категории</a></li>
+									</ul>
+								</li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Главная</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Проектируем</a></li>
+								<li class="menu-item menu-item-has-children nav-item dropdown">
+									<a href="#" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false" id="dropdown-8152" class="nav-link dropdown-toggle">Сделано у нас</a>
+									<ul class="dropdown-menu">
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Инсталляции</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Модульные дома</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Детские площадки</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Спортивные объекты</a></li>
+										<li class="menu-item nav-item"><a href="#" class="nav-link">Все проекты</a></li>
+									</ul>
+								</li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">О компании</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Блог</a></li>
+								<li class="menu-item nav-item"><a href="" class="nav-link">Специалистам</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-2 justify-content-end d-flex d-lg-none navbar-toggler-wrapper">
+						<a href="#mainMenu" class="navbar-toggler show" type="button" aria-label="Раскрыть навигацию">Меню</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="inner-page blog-item-page">
+			<style>
+				.blog-item-page .blog-item-page-image {
+					background-image: url(../img/blog-item-page-image-desktop.jpg);
+				}
+			</style>
+			<div class="offset-block offset-block--left">
+				<div class="blog-item-page-header">
+					<h1 class="basic-title inner-page-title">Экологичные тенденции в дизайне современной городской среды</h1>
+					<div class="blog-item-page-features blog-item-page-features--header">
+						<div class="point-text blog-item-date">17 марта 2024</div>
+						<div class="point-text blog-item-category"><a href="#">Новости индустрии</a></div>
+						<a href="#" class="shared-link">Поделиться новостью</a>
+					</div>
+				</div>
+			</div>
+			<section class="blog-item-page-image"></section>
+			<section class="blog-item-page-content text-content">
+				<div class="container">
+					<p>Глобальное потепление, загрязнение окружающей среды и другие экологические проблемы заставляют архитекторов искать новые решения для проектирования зданий. Рассказываем о проектах, которые отвечают новым мировым вызовам и делают архитектуру городов более «зеленой» с помощью локальных материалов, сокращения производственных отходов и создания зданий с минимальным потреблением энергии.</p>
+					<h2>Предпосылки к развитию направления eco-friendly</h2>
+					<p>Глобальное потепление, загрязнение окружающей среды и другие экологические проблемы заставляют архитекторов искать новые решения для проектирования зданий. Рассказываем о проектах, которые отвечают новым мировым вызовам и делают архитектуру городов более «зеленой» с помощью локальных материалов, сокращения производственных отходов и создания зданий с минимальным потреблением энергии.</p>
+					<p>
+						Всё больше архитектурных компаний в своих проектах делают акцент на принципах устойчивого развития. Среди недавних примеров — предложенный бюро Peter Pichler Architecture проект по строительству штаб-квартиры итальянской компании Bonfiglioli, а также углеродно-нейтральное здание от White Arkitekter. Сейчас работа архитекторов неразрывно связана с вопросами экологии, более рациональным использованием энергии и сведением до минимума отходов и загрязнений при строительстве.
+						С каждым днем появляется всё больше примеров экологичных зданий, которые не только отвечают сложившемуся тренду, но и пытаются решить глобальные проблемы.
+					</p>
+					<h2>Предпосылки к развитию направления eco-friendly</h2>
+					<p>Глобальное потепление, загрязнение окружающей среды и другие экологические проблемы заставляют архитекторов искать новые решения для проектирования зданий. Рассказываем о проектах, которые отвечают новым мировым вызовам и делают архитектуру городов более «зеленой» с помощью локальных материалов, сокращения производственных отходов и создания зданий с минимальным потреблением энергии.</p>
+					<p>
+						Всё больше архитектурных компаний в своих проектах делают акцент на принципах устойчивого развития. Среди недавних примеров — предложенный бюро Peter Pichler Architecture проект по строительству штаб-квартиры итальянской компании Bonfiglioli, а также углеродно-нейтральное здание от White Arkitekter. Сейчас работа архитекторов неразрывно связана с вопросами экологии, более рациональным использованием энергии и сведением до минимума отходов и загрязнений при строительстве.
+						С каждым днем появляется всё больше примеров экологичных зданий, которые не только отвечают сложившемуся тренду, но и пытаются решить глобальные проблемы.
+					</p>
+					<div class="blog-item-page-gallery">
+						<div class="swiper blog-item-page-swiper">
+							<div class="swiper-button swiper-button-prev blog-item-page-swiper-button-prev"></div>
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="img-fluid w-100" src="img/blog-item-gallery-1.jpg" width="1653" height="1010" />
+								</div>
+								<div class="swiper-slide">
+									<img class="img-fluid w-100" src="img/blog-item-gallery-2.jpg" width="1653" height="1010" />
+								</div>
+							</div>
+							<div class="swiper-button swiper-button-next blog-item-page-swiper-button-next"></div>
+							<div class="blog-item-page-swiper-pagination swiper-pagination"></div>
+						</div>
+					</div>
+					<h3>
+						1. Бизнес-центр Kö-Bogen II
+						<span>Ingenhoven Architects (2020)</span>
+					</h3>
+					<p>Глобальное потепление, загрязнение окружающей среды и другие экологические проблемы заставляют архитекторов искать новые решения для проектирования зданий. Рассказываем о проектах, которые отвечают новым мировым вызовам и делают архитектуру городов более «зеленой» с помощью локальных материалов, сокращения производственных отходов и создания зданий с минимальным потреблением энергии.</p>
+					<h3>
+						2. 3D-модель здания TECLA
+						<span>Mario Cucinella Architects (2021)</span>
+					</h3>
+					<p>
+						Итальянское бюро Mario Cucinella Architects в этом году представило 3D-модель жилого дома, возведенного в коммуне Масса-Ломбарда. Помимо использования технологий 3D-печати, проект можно назвать инновационным еще и потому, что его строительство сопровождалось почти нулевым выбросом углерода. TECLA — это результат коллаборации итальянского бюро с компанией WASP (World's Advanced Saving Project), занимающейся производством и продажей 3D-принтеров. Главной особенностью
+						проекта стал рельефный корпус, изготовленный из локальных материалов прямо на месте строительства с целью сокращения отходов и выбросов во время перевозки. Здание соединяет современные технологии и натуральные материалы, например, сырую землю, которая применяется в строительстве в разных частях света.
+					</p>
+					<h3>
+						3. Игровая площадка
+						<span>AirBubble ecoLogicStudio (2021)</span>
+					</h3>
+					<p>
+						В 2021 году лондонская компания ecoLogicStudio построила в Варшаве игровую площадку, которая очищает воздух. Сооружение стало первой в мире биотехнологической игровой площадкой, в конструкции которой содержатся культуры микроводорослей. Таким образом, площадка цилиндрической формы под открытым небом создает и поддерживает очищенный микроклимат и снижает городской шум, чтобы дети могли спокойно играть и общаться. Вскоре из площадки Airbubble планируют сделать городскую
+						лабораторию, в которой ученые будут изучать прикладные биотехнологии и их использование для очищения воздуха.
+					</p>
+				</div>
+			</section>
+			<div class="offset-block offset-block--left">
+				<div class="blog-item-page-footer">
+					<div class="blog-item-page-features blog-item-page-features--footer">
+						<div class="point-text blog-item-date">17 марта 2024</div>
+						<div class="point-text blog-item-category"><a href="#">Новости индустрии</a></div>
+						<a href="#" class="shared-link">Поделиться новостью</a>
+					</div>
+				</div>
+			</div>
+			<section class="index-examples index-examples--blog index-examples--dark offset-block offset-block--left">
+				<div class="title-wrapper">
+					<h2 class="basic-title">Другие публикации</h2>
+					<a href="blog.html" class="basic-button basic-button--light basic-button--arrowed d-none d-lg-inline-flex">
+						<span>Все статьи</span>
+						<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+						</svg>
+					</a>
+				</div>
+				<div class="index-examples-wrapper row">
+					<div class="col-xxl-2 col-lg-3 index-examples-item index-examples-item--text point-text">Мы хотим показать вам, как технологии входят в нашу жизнь уже сейчас.</div>
+					<div class="col-lg-3 index-examples-item index-examples-item--pic">
+						<div class="index-examples-item-image">
+							<a href="projects-item.html" class="stretched-link"></a>
+							<img src="img/example-1.jpg" class="img-fluid" width="600" height="880" />
+							<div class="index-examples-item-fader"></div>
+							<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+								<span>Подробнее</span>
+								<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+								</svg>
+							</a>
+						</div>
+						<a href="projects-item.html" class="index-examples-item-link">Экологичное проектирование в дизайне современной городской среды</a>
+					</div>
+					<div class="col-lg-3 index-examples-item index-examples-item--pic">
+						<div class="index-examples-item-image">
+							<a href="projects-item.html" class="stretched-link"></a>
+							<img src="img/example-3.jpg" class="img-fluid" width="600" height="880" />
+							<div class="index-examples-item-fader"></div>
+							<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+								<span>Подробнее</span>
+								<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+								</svg>
+							</a>
+						</div>
+						<a href="projects-item.html" class="index-examples-item-link">Новая коллекция уличной мебели собственного производства</a>
+					</div>
+					<div class="col-lg-3 index-examples-item index-examples-item--pic">
+						<div class="index-examples-item-image">
+							<a href="projects-item.html" class="stretched-link"></a>
+							<img src="img/example-4.jpg" class="img-fluid" width="600" height="880" />
+							<div class="index-examples-item-fader"></div>
+							<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+								<span>Подробнее</span>
+								<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+								</svg>
+							</a>
+						</div>
+						<a href="projects-item.html" class="index-examples-item-link">Особенности проектирования спортивных помещений общественного назначения</a>
+					</div>
+					<!--Мобильный вариант виджета блога, активируется на ширине 991 и ниже - начало-->
+					<div class="blog-swiper swiper d-lg-none d-block">
+						<div class="swiper-wrapper blog-list">
+							<div class="index-examples-item index-examples-item--pic swiper-slide">
+								<div class="index-examples-item-image">
+									<a href="projects-item.html" class="stretched-link"></a>
+									<img src="img/example-1.jpg" class="img-fluid" width="600" height="880" />
+									<div class="index-examples-item-fader"></div>
+									<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+										<span>Подробнее</span>
+										<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+										</svg>
+									</a>
+								</div>
+								<a href="projects-item.html" class="index-examples-item-link">Экологичное проектирование в дизайне современной городской среды</a>
+							</div>
+							<div class="index-examples-item index-examples-item--pic swiper-slide">
+								<div class="index-examples-item-image">
+									<a href="projects-item.html" class="stretched-link"></a>
+									<img src="img/example-3.jpg" class="img-fluid" width="600" height="880" />
+									<div class="index-examples-item-fader"></div>
+									<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+										<span>Подробнее</span>
+										<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+										</svg>
+									</a>
+								</div>
+								<a href="projects-item.html" class="index-examples-item-link">Новая коллекция уличной мебели собственного производства</a>
+							</div>
+							<div class="index-examples-item index-examples-item--pic swiper-slide">
+								<div class="index-examples-item-image">
+									<a href="projects-item.html" class="stretched-link"></a>
+									<img src="img/example-4.jpg" class="img-fluid" width="600" height="880" />
+									<div class="index-examples-item-fader"></div>
+									<a href="project-item.html" class="basic-button basic-button--white basic-button--arrowed image-link">
+										<span>Подробнее</span>
+										<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+										</svg>
+									</a>
+								</div>
+								<a href="projects-item.html" class="index-examples-item-link">Особенности проектирования спортивных помещений общественного назначения</a>
+							</div>
+						</div>
+					</div>
+					<!--Мобильный вариант виджета блога, активируется на ширине 991 и ниже - конец-->
+				</div>
+				<a href="articles.html" class="basic-button basic-button--light basic-button--arrowed all-feed-link d-inline-flex d-lg-none">
+					<span>Все статьи</span>
+					<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="white" />
+					</svg>
+				</a>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row footer-wrapper">
+					<div class="col-xxl-2 col-lg-3 footer-logo-wrapper">
+						<a href="/"><img src="img/logo-dark.svg" width="223" height="50" class="img-fluid logo" /></a>
+						<div class="social">
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/vk-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/yt-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/tg-icon.svg" width="40" height="40" />
+							</a>
+							<a href="#" target="_blank" class="social-item">
+								<img src="img/wh-icon.svg" width="40" height="40" />
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-3 footer-menu footer-menu--left">
+						<nav>
+							<ul>
+								<li class="menu-item current-menu-item page_item"><a href="" aria-current="page">Главная</a></li>
+								<li class="menu-item"><a href="#">О компании</a></li>
+								<li class="menu-item"><a href="#">Каталог</a></li>
+								<li class="menu-item"><a href="#">Реализованные проекты</a></li>
+								<li class="menu-item"><a href="#">Готовые решения</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-3 footer-menu footer-menu--right">
+						<nav>
+							<ul>
+								<li class="menu-item"><a href="#">Блог</a></li>
+								<li class="menu-item"><a href="#">Клиентам</a></li>
+								<li class="menu-item"><a href="#">Специалистам</a></li>
+								<li class="menu-item"><a href="#">Конакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-xxl-4 col-lg-3 footer-contacts">
+						<div class="footer-contacts-item">
+							<h4 class="footer-contacts-itme-title">Для звонков по всей России</h4>
+							<a href="tel:+78009000000" class="large">8&nbsp;800&nbsp;900&nbsp;00&nbsp;00</a>
+						</div>
+						<div class="footer-contacts-item">
+							<h4 class="footer-contacts-itme-title">Адрес производства</h4>
+							<span class="large">г.&nbsp;Кемерово, ул.&nbsp;Светлая,&nbsp;5</span>
+						</div>
+						<a href="mailto:" class="basic-button basic-button--dark basic-button--arrowed">
+							<span>Написать письмо</span>
+							<svg width="43" height="28" viewBox="0 0 43 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 13.8041H42M42 13.8041L32.5 0.804077M42 13.8041L32.5 26.8041" stroke="rgb(218, 214, 214)" />
+							</svg>
+						</a>
+						<div class="footer-contacts-item footer-copyright">
+							<h4 class="footer-contacts-itme-title">© 2024 Производственная компания Арт‑Массив. Все права защищены.</h4>
+							<div class="dev">
+								<a href="https://mediatip.ru/" target="_blank" title="Разработка: Медиатип">
+									<img src="img/copyright_black.png" width="40" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Форма заказа -->
+		<div class="modal order-modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down" role="document">
+				<div class="modal-content form-modal">
+					<div class="modal-title-wrapper">
+						<h3 class="modal-title">
+							<span>Оформите заявку и</span>
+							получите скидку 5%
+							<span>на проект</span>
+						</h3>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">Закрыть</button>
+					</div>
+					<form action="#" class="order-form order-form--main" method="post">
+						<div class="row form-field-row">
+							<div class="col-lg-6 form-field-wrapper">
+								<label class="form-label" for="username">
+									Контактные данные
+									<sup>*</sup>
+								</label>
+								<input class="form-input form-input--name" type="text" name="username" id="username" placeholder="Как вас зовут?" required />
+								<input class="form-input form-input--phone phone-input" type="tel" name="phone" id="phone" placeholder="Номер телефона" required />
+							</div>
+							<div class="col-lg-6 form-field-wrapper">
+								<label class="form-label" for="company">Дополнительно</label>
+								<input class="form-input form-input--company" type="text" name="company" id="company" placeholder="Название организации" />
+								<input class="form-input form-input--email" type="email" name="email" id="email" placeholder="Электронная почта" />
+							</div>
+						</div>
+						<div class="row form-field-row">
+							<div class="form-field-wrapper">
+								<label class="form-label" for="product">Информация о заказе</label>
+								<input size="40" class="form-input form-input--order" value="Скамья уличная трехместная ECO венге / черный" type="text" name="product" readonly="readonly" />
+							</div>
+						</div>
+						<div class="row form-field-row">
+							<div class="form-field-wrapper">
+								<label class="form-label" for="comment">Комментарий к заказу</label>
+								<textarea name="comment" cols="40" rows="6" class="form-input" placeholder="Напишите ваши комментарии"></textarea>
+							</div>
+						</div>
+						<div class="form-field-row">
+							<div class="agree-wrapper">
+								<span class="wpcf7-form-control-wrap" data-name="accept-policy-agree-full">
+									<span class="wpcf7-form-control wpcf7-acceptance">
+										<span class="wpcf7-list-item">
+											<label>
+												<input type="checkbox" name="accept-policy-agree-full" value="1" class="form-check-input" />
+												<span class="wpcf7-list-item-label">
+													Я даю
+													<a href="/wp-content/uploads/2022/11/policy.pdf" target="_blank">согласие на обработку персональных данных</a>
+												</span>
+											</label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+						<button type="submit" class="basic-button basic-button--dark-green order-btn"><span>Отправить заявку</span></button>
+						<p>* – обязательно для заполнения</p>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		<script type="text/javascript" src="js/fancybox.umd.js"></script>
+		<script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
+		<script type="text/javascript" src="js/mmenu-light.js"></script>
+		<script type="text/javascript" src="js/butter.js"></script>
+		<script>
+			const menu = new MmenuLight(document.querySelector("#mainMenu"), "(max-width: 991px)");
+			var navigator = menu.navigation({
+				selectedClass: "selected",
+				slidingSubmenus: true,
+				theme: "dark",
+				title: "Меню",
+			});
+			var drawer = menu.offcanvas({
+				position: "left",
+			});
+			document.querySelector('a[href="#mainMenu"]').addEventListener("click", (evnt) => {
+				evnt.preventDefault();
+				drawer.open();
+			});
+			document.querySelector(".close-menu-button").addEventListener("click", (evnt) => {
+				evnt.preventDefault();
+				drawer.close();
+			});
+		</script>
+		<script type="text/javascript" src="js/front.js"></script>
+	</body>
+</html>
