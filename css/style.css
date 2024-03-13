@@ -5094,11 +5094,12 @@ form button[type=submit] {
 }
 .blog-item-page .blog-item-page-footer {
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 6.5rem;
 }
 .blog-item-page .blog-item-page-features {
   display: flex;
   align-items: flex-start;
+  position: relative;
 }
 @media (max-width: 991px) {
   .blog-item-page .blog-item-page-features {
@@ -5166,6 +5167,54 @@ form button[type=submit] {
 }
 .blog-item-page .blog-item-page-features .shared-link:hover {
   color: rgb(187, 209, 52);
+}
+.blog-item-page .blog-item-page-features .shared-block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: 0.2s ease;
+  background-color: #ffffff;
+  transform: translateX(150%);
+  height: 72px;
+}
+@media (max-width: 991px) {
+  .blog-item-page .blog-item-page-features .shared-block {
+    right: unset;
+    left: 0;
+    transform: translateX(-150%);
+    bottom: -30px;
+  }
+}
+@media (max-width: 575px) {
+  .blog-item-page .blog-item-page-features .shared-block {
+    padding: 15px 25px;
+    height: 70px;
+  }
+}
+.blog-item-page .blog-item-page-features .shared-block.show {
+  transform: translateX(0);
+}
+.blog-item-page .blog-item-page-features .shared-block-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  outline: unset;
+  box-shadow: unset;
+}
+.blog-item-page .blog-item-page-features--footer .shared-block {
+  bottom: unset;
+  top: 0;
+}
+@media (max-width: 991px) {
+  .blog-item-page .blog-item-page-features--footer .shared-block {
+    top: unset;
+    bottom: -30px;
+  }
 }
 .blog-item-page .blog-item-page-gallery {
   width: 80%;
@@ -5375,6 +5424,122 @@ form button[type=submit] {
     height: 400px;
     aspect-ratio: 600/400;
   }
+}
+
+.lostpage {
+  background-color: rgb(46, 42, 42);
+}
+.lostpage > .container,
+.lostpage .lostpage-content {
+  height: 100%;
+}
+.lostpage .lostpage-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content {
+    flex-direction: column;
+  }
+}
+.lostpage .lostpage-content .lostpage-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 60px;
+  position: relative;
+}
+@media (max-width: 1199px) {
+  .lostpage .lostpage-content .lostpage-code {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .lostpage .lostpage-content .lostpage-code {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content .lostpage-code {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
+.lostpage .lostpage-content .lostpage-code::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 70%;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content .lostpage-code::after {
+    width: 70px;
+    height: 2px;
+    right: unset;
+    left: 50%;
+    top: unset;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}
+.lostpage .lostpage-content .lostpage-code > div {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content .lostpage-code > div {
+    margin-bottom: 5px;
+  }
+}
+.lostpage .lostpage-content .lostpage-info {
+  padding-left: 60px;
+}
+@media (max-width: 1199px) {
+  .lostpage .lostpage-content .lostpage-info {
+    padding-left: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .lostpage .lostpage-content .lostpage-info {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content .lostpage-info {
+    padding-left: 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+.lostpage .lostpage-content .lostpage-info > div {
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+@media (max-width: 575px) {
+  .lostpage .lostpage-content .lostpage-info > div {
+    margin-bottom: 5px;
+  }
+}
+.lostpage .lostpage-content .lostpage-info a {
+  color: white;
+  text-decoration: underline;
+}
+.lostpage .lostpage-content .lostpage-info a:hover {
+  color: rgb(187, 209, 52);
+}
+
+.lostpage + footer {
+  display: none;
 }
 
 .footer .footer-wrapper {

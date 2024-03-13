@@ -377,6 +377,26 @@ if (closeFiltersButton) {
 	});
 }
 
+//Открытие/закрытие блока расшаривания на странице записи блога
+let sharedLinks = document.querySelectorAll(".shared-link");
+if (sharedLinks) {
+	sharedLinks.forEach(function(sharedLink){
+		let sharedBlock = sharedLink.closest(".blog-item-page-features").querySelector(".shared-block");
+		let sharedCloseButton = sharedLink.closest(".blog-item-page-features").querySelector(".shared-block-close");
+		sharedLink.addEventListener("click", function(e) {
+			e.preventDefault();
+			if (!sharedBlock.classList.contains("show")) {
+				sharedBlock.classList.add("show");
+			}
+		});
+		sharedCloseButton.addEventListener("click", function() {
+			if (sharedBlock.classList.contains("show")) {
+				sharedBlock.classList.remove("show");
+			}
+		});
+	});
+}
+
 //Карта 2GIS в контактах
 let map = document.getElementById("map");
 
@@ -386,12 +406,20 @@ if (map) {
             center: [55.342993, 86.004726],
             zoom: 16,
         });
+		let pinSize = [92, 108];
+		let anchorValue = [46, 108];
+		if ((document.documentElement.clientWidth < 768) && (document.documentElement.clientWidth > 575)) {
+			pinSize = [80, 93];
+			anchorValue = [40, 93];
+		} else if (document.documentElement.clientWidth < 576)  {
+			pinSize = [38, 45];
+			anchorValue = [19, 45];
+		}
         mapicon = DG.icon({
             iconUrl: "img/pin-dark.svg" /* Иконка маркера */,
-            iconAnchor: [46, 108],
-            popupAnchor: [0, 20],
+            iconAnchor: anchorValue,
             className: "map-icon",
-            iconSize: [92, 108] /* Размер иконки */,
+            iconSize: pinSize /* Размер иконки */,
         });
         DG.marker([55.342993, 86.004726], { icon: mapicon }).addTo(map); /* Координаты маркера */
     });
