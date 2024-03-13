@@ -52,7 +52,6 @@ let productSliderParams = {
 	slidesOffsetBefore: -30,
 	freeMode: {
 		enabled: true,
-		// sticky: true,
 	},
 	navigation: {},
 	pagination: {},
@@ -174,7 +173,6 @@ new Swiper(".blog-swiper", {
 	slidesOffsetBefore: -20,
 	freeMode: {
 		enabled: true,
-		// sticky: true,
 	},
 	breakpoints: {
 		300: {
@@ -200,36 +198,6 @@ new Swiper(".blog-swiper", {
 		},
 	},
 });
-
-// new Swiper(".gallery-swiper", {
-// 	slidesPerView: 5,
-// 	slidesPerGroup: 1,
-// 	speed: 500,
-// 	simulateTouch: true,
-// 	spaceBetween: 30,
-// 	watchOverflow: true,
-// 	touchReleaseOnEdges: true,
-// 	navigation: {
-// 		nextEl: ".gallery-swiper-button-next",
-// 		prevEl: ".gallery-swiper-button-prev",
-// 	},
-// 	breakpoints: {
-// 		300: {
-// 			slidesPerView: 3,
-// 			spaceBetween: 20,
-// 		},
-// 		576: {
-// 			slidesPerView: 3,
-// 		},
-// 		992: {
-// 			slidesPerView: 4,
-// 			spaceBetween: 30,
-// 		},
-// 		1400: {
-// 			slidesPerView: 4,
-// 		},
-// 	},
-// });
 
 const sliderItemThumbs = new Swiper(".catalog-item-gallery .swiper", {
 	slidesPerView: 5,
@@ -397,10 +365,34 @@ let closeFiltersHandler = function () {
 	}
 }
 
-openFiltersButton.addEventListener('click', function() {
-	openFiltersHandler();
-});
+if (openFiltersButton) {
+	openFiltersButton.addEventListener('click', function() {
+		openFiltersHandler();
+	});
+}
 
-closeFiltersButton.addEventListener('click', function() {
-	closeFiltersHandler();
-});
+if (closeFiltersButton) {
+	closeFiltersButton.addEventListener('click', function() {
+		closeFiltersHandler();
+	});
+}
+
+//Карта 2GIS в контактах
+let map = document.getElementById("map");
+
+if (map) {
+    DG.then(function () {
+        map = DG.map("map", {
+            center: [55.342993, 86.004726],
+            zoom: 16,
+        });
+        mapicon = DG.icon({
+            iconUrl: "img/pin-dark.svg" /* Иконка маркера */,
+            iconAnchor: [46, 108],
+            popupAnchor: [0, 20],
+            className: "map-icon",
+            iconSize: [92, 108] /* Размер иконки */,
+        });
+        DG.marker([55.342993, 86.004726], { icon: mapicon }).addTo(map); /* Координаты маркера */
+    });
+}

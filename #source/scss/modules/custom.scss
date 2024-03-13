@@ -717,7 +717,8 @@ a {
 	.index-examples-wrapper,
 	.index-about-content,
 	.blog-item-page-header,
-	.blog-item-page-footer {
+	.blog-item-page-footer,
+	.contacts-info {
 		padding-left: $left-offset-desktop-large;
 		@media (min-width: 1200px) and (max-width: 1920px) {
 			padding-left: $left-offset-desktop-standart;
@@ -725,16 +726,34 @@ a {
 		@media (max-width: 1199px) {
 			padding-left: 20px;
 		}
+		// @media (max-width: 575px) {
+		// 	padding-left: 9px;
+		// }
 	}
 	.title-wrapper,
 	.swiper,
-	.index-examples-wrapper,
+	// .index-examples-wrapper,
 	.index-about-content,
 	.blog-item-page-header,
-	.blog-item-page-footer {
+	.blog-item-page-footer,
+	.contacts-map {
 		padding-right: 30px;
 		@media (max-width: 1199px) {
 			padding-right: 20px;
+		}
+		// @media (max-width: 575px) {
+		// 	padding-right: 9px;
+		// }
+	}
+	.blog-item-page-header,
+	.blog-item-page-footer {
+		@media (max-width: 1199px) {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+		@media (max-width: 991px) {
+			padding-left: 9px;
+			padding-right: 9px;
 		}
 	}
 }
@@ -766,5 +785,64 @@ a {
 	@media (max-width: 575px) {
 		width: calc(100% - 40px);
 		margin-left: 20px;
+	}
+}
+
+
+.social {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	@media (max-width: 1699px) {
+		gap: 15px;
+	}
+	@media (max-width: 1499px) {
+		gap: 10px;
+	}
+	@media (max-width: 1399px) {
+		gap: 15px;
+	}
+	@media (max-width: 991px) {
+		margin-bottom: 80px;
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 50px;
+	}
+	@media (max-width: 575px) {
+		gap: 20px;
+	}
+	.social-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border: 1px solid rgb(218, 214, 214);
+		border-radius: 50%;
+		transition: 0.2s ease;
+		@media (max-width: 1699px) {
+			width: 35px;
+			height: 35px;
+		}
+		@media (max-width: 1399px) {
+			width: 40px;
+			height: 40px;
+		}
+		> svg,
+		> img {
+			width: 16px;
+			height: auto;
+			transition: 0.2s ease;
+		}
+		&:hover {
+			background-color: $salad;
+			border-color: $salad;
+			transition: 0.2s ease;
+			> svg,
+			> img {
+				transform: scale(1.15);
+				transition: 0.2s ease;
+			}
+		}
 	}
 }

@@ -1,0 +1,88 @@
+.contacts-page {
+    .title-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contacts-info {
+        font-size: 1.25rem;
+        @media (max-width: 1199px) {
+            margin-bottom: 3rem;
+        }
+        .content {
+            padding-right: 30px;
+        }
+        .contacts-items {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            @media (max-width: 1920px) {
+                gap: 20px;
+            }
+            .point-text {
+                @media (max-width: 1920px) {
+                    padding-left: 25px;
+                }
+                &::before {
+                    @media (max-width: 1920px) {
+                        left: 0;
+                    }
+                }
+            }
+            a {
+                color: $black;
+                &:hover {
+                    color: $salad_dark;
+                }
+            }
+        }
+        .contacts-social {
+            margin-top: 4rem;
+            @media (max-width: 1399px) {
+                margin-top: 2rem;
+            }
+            .social {
+                margin-top: 30px;
+                margin-bottom: 0;
+                @media (max-width: 1399px) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .contacts-wrapper {
+        display: flex;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-top: 1px solid rgba(46, 42, 42, 0.2);
+        flex-wrap: wrap;
+        // min-height: 1000px;
+        .contacts-map {
+            overflow: hidden;
+            @media (max-width: 1199px) {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+        #map {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            aspect-ratio: 1867 / 853;
+            @media (max-width: 1199px) {
+                width: 1200px;
+                height: 800px;
+                aspect-ratio: 1200 / 800;
+            }
+            @media (max-width: 767px) {
+                width: 800px;
+                height: 500px;
+                aspect-ratio: 800 / 500;
+            }
+            @media (max-width: 575px) {
+                width: 600px;
+                height: 400px;
+                aspect-ratio: 600 / 400;
+            }
+        }
+    }
+}
